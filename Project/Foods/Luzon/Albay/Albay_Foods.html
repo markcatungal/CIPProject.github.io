@@ -1,0 +1,695 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Albay Food And Restaurants</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+
+
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:50px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #3b668f;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 4px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 200px;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	.responsive {
+		padding: 0 10px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+		list-style: none;
+		counter-reset: my-awesome-counter;
+		padding: 20px;
+		margin-left: 80px;
+	}
+	.places {
+		counter-increment: my-awesome-counter;
+		margin: 0.25rem;
+		font-size: 50px;
+		color: #1B4A62;
+	}
+	.places:before {
+		content: counter(my-awesome-counter);
+		background-image: linear-gradient(to right, #1B4A62, #91C6D4);
+		width: 10rem;
+		height: 10rem;
+		border-radius: 1px 100px 100px 100px;
+		display: inline-block;
+		line-height: 10rem;
+		color: white;
+		text-align: center;
+		margin-right: 0.5rem;
+	}
+	.places:after{
+		width: 2.5rem;
+		height: 2.5rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		background: var(--highlight1);
+		z-index: -1;
+		border-top-left-radius: 3px;
+	}
+	
+	.link{
+		position: relative;
+		font-size: 24px;
+	}
+	
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	}
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:right;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .card {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+
+	.line1{
+		border: 6px solid #167D7F;
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>6 DELICACIES YOU MUST TRY IN ALBAY</h1>
+    
+		</div>
+	</div>
+	<br>
+	
+	<div class="title">
+		<br>
+		<br>
+			<h2> Local Cuisine</h2>
+		<br>
+			<h5>April 2, 2021</h5>
+		<br>
+			<h5 style="color:black;"><i>by Den Calasan</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Albay is known for its homegrown premium pilinuts. The usual favorites are crispy candies 
+			pilinuts with honey, roasted and salted pili, mazapan, butternuts, caramelitos, pastillas and sesame seed coated pilinuts.</p>
+		</div>
+	<br>
+	<br>
+	<hr style="border-top: 5px dashed #e3fdfd; border-bottom: 5px dashed #167D7F;">
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="pilinuts.jpg">
+		  <img src="pilinuts.jpg" alt="PilitNuts" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="saltedpili.jpg">
+		  <img src="saltedpili.jpg" alt="SaltedPili" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="pastillas.jpg">
+		  <img src="pastillas.jpg" alt="Pastillas" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="mazapan.jpg">
+		  <img src="mazapan.jpg" alt="Mazapan" width="600" height="400">
+		</a>
+		
+	  </div>
+	</div>
+
+
+	<div class="clearfix"></div>
+	<br>
+	<br>
+	<hr style="border-top: 5px dashed #e3fdfd; border-bottom: 5px dashed #167D7F;">
+	<br>
+	<br>
+	<br>		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b>RECOMMENDED FOODS</b>
+		<br>
+		<p>There are only a few restaurants in Albay, but that shouldn’t stop you from having 
+		filling meals especially with unique dishes in the province. Here are some must-try dishes that 
+		are staples in Albay restaurants or homestay kitchens. </p>
+	</div>
+	<div>
+	<br>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one"> PILINUTS</li>
+			<br>
+				<div class = "p">
+					<p>Albay is known for its homegrown premium pilinuts. 
+					The usual favorites are crispy candies pilinuts with honey, roasted and salted pili, mazapan, 
+					butternuts, caramelitos, pastillas and sesame seed coated pilinuts.</p>
+					<br>
+							<a href="pilinuts.jpg" target="sameWindow">
+								<img class="img1" src="pilinuts.jpg" alt="Vunes" title="Vunes">
+							</a>
+					<br>
+				</div>	
+			<li class="places" id="two"> PINANGAT</li>
+			<br>
+				<div class = "p">
+					<p>Pinangat is a version of laing, a famous native chili-hot dish of a little town of Camalig,
+					Albay which is a blend of ground pork, coconut milk, diced shrimps, and chili wrapped in gabi leaves.</p>
+					<br>
+					<br>
+							<a href="pinangat.jpg" target="sameWindow">
+								<img class="img1" src="pinangat.jpg" alt="pinangat" title="pinangat" style="border-radius:30px;">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>This dish is a well-known among Bicolanos because of its 
+					distinctive taste that a Bicolano could perfect.</p>
+				<br>
+				</div>
+			<li class="places" id="three"> SILI ICE CREAM</li>
+			<br>
+				<div class = "p">
+					<a href="chili.jpg" target="sameWindow">
+								<img  style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 5px; 
+								border-style: double groove inset;border-color: #b0643a; float: right; margin: 20px;" src="chili.jpg" alt="Beach" title="Beach">
+					</a>
+					<p>Home to the 1st Colonial Grill restaurant is the “sili” (chili) ice cream.
+					Home to the 1st Colonial Grill restaurant is the “sili” (chili) ice cream.</p>
+					<br>
+					<p>This ice cream, with “siling labuyo” as one of its main ingredients, 
+					comes in different levels of spiciness with the Mayon Volcano level sili ice cream as the spiciest of them all.</p>
+					<br>
+							<a href="siliicecream.png" target="sameWindow">
+								<img  style="display: block; margin-left: auto; margin-right: auto; width: 30%; border: 4px; 
+								border-style: double dashed inset;border-color: #b0643a; float: left; margin: 20px;" src="siliicecream.png" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>The harmony of a cold, creamy and spicy ice cream is what makes 
+					this dessert a hit among local diners and as well as tourists.</p>
+				<br>
+				</div>
+			<li class="places" id="four"> BICOL EXPRESS</li>
+			<br>
+				<div class = "p">
+					<p>Bicol Express is what Bicolanos are known for.It has that good 
+					amount of heat that can awaken your taste buds.</p>
+					<br>
+							<a href="bicolexpress.png" target="sameWindow">
+								<img class="img1" src="bicolexpress.png" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p> It has pork cubes cooked in coconut milk and sili with that yumminess you’ll crave after.</p>
+					<br>
+				<br>
+				</div>
+			<li class="places" id="five"> DJC HALO-HALO<li>
+			<br>
+				<div class = "p">
+					<p>DJC Halo-halo is the sweetest you will ever experience in Albay! 
+					This famed halo-halo’s unique flavor has generous amount of shredded cheese toppings. 
+					The balance of sweetness and salty flavor gave DJC a good name.</p>
+					<br>
+							<a href="halo-halo.jpg" target="sameWindow">
+								<img class="img1" src="halo-halo.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			<li class="places" id="six"> GUINOBATAN LONGGANISA<ol>
+			<br>
+				<div class = "p">
+					<p>Guinobatan Longganisa is a pork sausage in diminutive size and with distinct salty-sour fla or, 
+					dipped in vinegar and served  with egg.</p>
+					<br>
+							<a href="guinobatanlongganisa.jpg" target="sameWindow">
+								<img class="img1" src="guinobatanlongganisa.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>
+			<br>										
+			</ol></li>
+		</ol>
+		<br>
+		<hr style="border: 6px solid #167D7F;">
+		<br>
+		<h3 style="text-align:center;">RESTAURANTS</h3>
+		<br>
+		<hr style="border: 6px solid #167D7F;">
+			<div>
+
+
+				<br>
+				<ol class="listplaces">
+					<li class="places" id="seven"> COLONIAL GRILL</li>
+					<br>
+					<div class = "p">
+						<p>Established in 2004, 1st Colonial Grill was opened and has since served authentic Bicol dishes.</p>
+						<br>
+								<a href="colonial1.jpg" target="sameWindow">
+									<img class="img1" src="colonial1.jpg" alt="Vunes" title="Vunes">
+								</a>
+						<br>
+						<p>Over the years, 1st Colonial Grill developed its menu, as it now serves “Bicolano food fusion,”their own take on making traditional Bicolano dishes more flavorful without losing its natural flavors.</p>
+						<br>
+								<a href="colonial2.jpg" target="sameWindow">
+									<img class="img1" src="colonial2.jpg" alt="Vunes" title="Vunes">
+								</a>
+						<br>
+					</div>	
+				</ol>
+			</div>		
+	</div>
+
+</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">PilitNuts</a><br>
+					<a class="conte" href="#two">Pinangat</a><br>
+					<a class="conte" href="#three">Sili Ice Cream</a><br>
+					<a class="conte" href="#four">Bicol Express</a><br>
+					<a class="conte" href="#five">DJC Halo-Halo</a><br>
+					<a class="conte" href="#six">Guinobatan Longganisa</a><br>
+					<a class="conte" href="#seven">Colonial Grill</a><br>					
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+			<div class = "guide">
+		<br>
+				<h1 class = "title">Read more of our Albay Guide</h1>
+					<div class = "margin">
+						<div class="row">
+			
+							<div class="column">
+								<div class="last">
+										<a href="1stpic.jpg" target="_blank">
+											<img src="1stpic.jpg" width="200" ></a>
+												<div class="overlay">
+														<div class="text">8 Things To Do in Albay</div>
+												</div>
+								</div>
+														<h3>8 Things To Do in Albay</h3>
+							</div>
+						
+		  
+							<div class="column">
+								<div class="last">
+									<a href="2ndpic.jpg" width="200" target="_blank">
+										<img src="2ndpic.jpg"></a>
+											<div class="overlay">
+												<div class="text">8 Things To Do in Albay</div>
+											</div>
+								</div>
+												<h3>8 Things To Do in Albay</h3>
+							</div>
+			
+							<div class="column">
+								<div class="last">
+									<a href="3rdpic.jpg" target="_blank">
+										<img src="3rdpic.jpg"></a>
+											<div class="overlay">
+												<div class="text">8 Things To Do in Albay</div>
+											</div>
+								</div>
+											<h3>8 Things To Do in Albay</h3>
+							</div>
+		  
+							<div class="column">
+								<div class="last">
+									<a href="4thpic.jpg" target="_blank">
+										<img src="4thpic.jpg"></a>
+											<div class="overlay">
+												<div class="text">8 Things To Do in Albay</div>
+											</div>
+								</div>
+												<h3>8 Things To Do in Albay</h3>
+							</div>
+						</div>
+					</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,722 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Aklan</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background-image: linear-gradient(to right, #fff 15%,#8bbbd7 49%, #fff 85%);
+	}
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;  
+	}
+
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: ivory;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: ivory;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+		
+	}
+	
+	/* Fake image */
+	.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: ivory;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	.h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		color:#1A385A;
+		font-size:40px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	.h3{
+		font-weight:100px;
+		text-align:center;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h4{
+		font-weight:100px;
+		text-align:left;
+		margin-left: 100px;
+		color:#E46F44;
+		font-size:30px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #3b668f;
+		font-size:20px;
+	}
+	
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p1{
+		font-family: 'Poppins', sans-serif;
+		color:#82331a;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 40px;
+	}
+	
+	.p .img{
+		width: 500px;
+		height: 300px;	
+		margin: 20px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+	}
+	
+	ul{
+		list-style-image: linear-gradient(to left bottom, blue, pink);
+		margin-left: 80px;
+	}
+	
+	.line1{
+		border: 7px solid #2691a5;
+		width: 99%;
+	}
+	.line2 {
+		border-top: 5px dotted #6b311f;
+		border-bottom: 5px dotted #fff;
+		width: 99%;
+	}
+	
+	.line3{
+		border: 10px inset #2691a5;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: #ddd;
+	  margin-top: 20px;
+	}
+	
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	
+	.guide{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+		width: 100%;
+		float:right;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .column, .last {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.link{
+		  margin:10px 0;
+		  font-family: 'Poppins', sans-serif;
+	}
+		
+	.link a,.link a:visited,.link a:hover,.link a:active{
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+			position:relative;
+		  transition:0.5s color ease;
+			text-decoration:none;
+			color: #00719c;
+			font-size:20px;
+	}
+	.link a:hover{
+			color:#d18e11;
+	}
+	.link a.before:before,.link a.after:after{
+		  content: "";
+		  transition:0.5s all ease;
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+		  position:absolute;
+	}
+	.link a.before:before{
+		  top:-0.25em;
+	}
+		.link a.after:after{
+		  bottom:-0.25em;
+	}
+	.link a.before:before,.link a.after:after{
+		  height:5px;
+		  height:0.35rem;
+		  width:0;
+		  background:#d18e11;
+	}
+	.link a.first:after{
+		  left:0;
+	}
+	.link a.before:hover:before,a.after:hover:after{
+		  width:100%;
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	
+	</style>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.30.2021-->
+	<div class="topnav">
+			<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+			<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+			<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+			<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+			<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+			<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+			<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+			<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	
+	<div class="container">
+	
+			<img src="aklan.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>Aklan Itinerary: Ultimate Travel Guide</h1>
+    
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="title">
+	<br>
+	<br>
+			<h2> Aklan Travel Guide</h2>
+	<br>
+		<h5>March 18, 2021</h5>
+		<br>
+			<h5 style="color:black;"><i>Jacob Belecina</i></h5>
+		<br>
+	</div>	
+	<br>
+	
+	
+<div class="leftcolumn">
+	<div class = "p">
+		<br>
+		<p>If it's your first time in Bohol, you might want to focus on the more popular attractions. 
+		The packaged countryside and Panglao Island tours are the most popular because they highlight the most breathtaking landscapes in the province.
+		Most visitors spend at least three days, two nights to visit Bohol. 
+		But you can extend it up to 5 days. Here’s a sample itinerary that you can take inspiration from:</p>
+		
+		<br>
+		<br>	
+		<br>
+		<h3 class="h3" id="Itinerary"> Sample Itinerary </h3>
+		<br>
+		<div class = "box">
+			<div class="content">
+					<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'><b> Day 1: Arrival + Beach Tour </b></i></h3>
+						<br>
+						<ul>
+							<li>8:10 AM - ETD from Manila</li>
+							<li>9:10 AM - ETA in Caticlan, Boracay Airport</li>
+							<li>10:30 AM - ETA in Boracay Island, Eat brunch at Lemoni Café</li>
+							<li>12:00 PM - Check-in at Giulius Boracay Italian Resort, Relax</li>
+							<li>3:00 PM - A beach tour of Boracay's White Beach and sunset paraw sailing</li>
+							<li>7:30 PM - Dinner at Smoke Resto</li>
+							<li>9:30 PM - Drinks at a pub crawl adventure</li>
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 2: Island-Hopping + Water Activities + Local Dinner</b></i></h3>
+						<br>
+						<ul>
+							<li>8:00 AM - Breakfast at the hotel</li>
+							<li>10:00 AM - Start of Boracay island-hopping</li>
+							<li>3:00 PM - Return to White Beach and relax for a while</li>
+							<li>4:00 PM - Water activities such as parasailing, jetski, and paddleboarding</li>
+							<li>7:00 PM - Local culinary experience at D’Talipapa</li>
+							<li>9:00 PM - Drinks and evening snacks at Dos Mestizos</li>
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 3: Shopping + Check Out</b></i></h3>
+						<br>
+						<ul>
+							<li>8:00 AM - Breakfast at the hotel</li>
+							<li>9:00 AM - Sightseeing and land tour</li>
+							<li>10:30 AM - Check out of the hotel</li>
+							<li>11:00 AM - Travel from Boracay Island to Caticlan Airport</li>
+							<li>12:55 PM - ETD from Caticlan Airport</li>
+							<li>1:55 PM - Arrival at NAIA terminal 2, Manila</li>	
+						</ul> 
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr class="line3">
+	<br>
+	<h2 class="h2" id="Time">Best Time To Go There</h2>
+	<br>
+	<hr class="line3">
+	<br>
+	<br>
+
+		<div class = "p">
+			
+			<a href="aklannn.jpg" target="sameWindow">
+			<img class="img" src="aklannn.jpg" alt="Beach" style="float: left; border-style: dashed solid" title="Beach">
+			</a>	
+			<br>	
+			<p>If you are going to Boracay for some relaxing, island-hopping, or water activities, yous should take note of the climate, 
+			weather, and temperature during your target travel dates before booking your plane ticket. 
+			This is to avoid canceled plans and to lessen the hassle usually caused by unexpected rains and thunderstorms.</p>
+			<br>
+			<p>In this section, you'll be able to know the best time of the year to visit Boracay. 
+			Also, the annual celebration on the island, as well as what to wear during your stay.</p>
+			<br>
+			<h4 id="Dry">Dry and Summer Season | December to May</h4>
+			<br>
+			<a href="aks.jpg" target="sameWindow">
+			<img class="img" src="aks.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<br>
+			<p>You can enjoy Boracay all year round, but the best season to experience the island and its beaches are from December to May, 
+			the dry season in the Philippines.</p>
+			<br>
+			<p>You would be able to walk around the powdery white sands of the beaches while taking in the warm summer sun. 
+			A lot of locals and international travelers visit the island during this time as well so you can expect bars to be lively at night. </p> 
+			<br>
+			<h4 id="Peak">Peak Season</h4>
+			<br>
+			<a href="peakseason.jpg" target="sameWindow">
+			<img class="img" src="peakseason.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>
+			<p>Boracay’s peak season is from March to May, the country’s summer months. 
+			During this period, Boracay becomes the go-to beach destination for locals.</p>
+			<br>
+			<p>National holidays such as Christmas, New Year, Chinese New Year, and Lent or Holy Week (from Palm Sunday to Easter Sunday) are also peak seasons in Boracay. </p>
+			<br>
+			<h3 id="Climate">Climate and Weather</h3>
+			<br>
+			<p>Rest assured that no matter what time of the year you choose, the weather will never be too chilly or too hot. 
+			The average high temperature is approximately 30 °C, while the average lows are at around 25 °C. The hottest month in Boracay usually falls from March to June, 
+			while the wettest month often falls from August to October.  </p>
+			<br>
+			<p>Here's an overview of the monthly average temperature in Boracay:</p>
+			<br>
+			
+			<a href="temp.jpg" target="sameWindow">
+			<img class="img1" src="temp.jpg" alt="Beach" title="Beach">
+			</a>
+			<br>
+		</div><br>
+	
+	<hr class="line2">
+	<br>
+	<h2 class="h2" id="Directions">How to Get There?</h2>
+	
+		<div class = "p">
+			<a href="howto.jpg" target="sameWindow">
+			<img class="img1" src="howto.jpg" alt="Beach" title="Beach">
+			</a>
+			<br>
+			<p>Boracay is accessible from the major cities of Luzon, Visayas, and Mindanao – three primary island groups of the Philippine archipelago.</p>
+			<br>
+			<p>Before traveling to Boracay, make sure you have a printed voucher from your pre-booked accredited Boracay resorts and hotels. 
+			You will be denied entry to the island if you don’t hold a voucher from your resort or hotel. 
+			It is part of the new rules that the local government and tourism office is implementing since Boracay opened to the public after the rehabilitation program in 2018.</p>
+			<br>
+			<p>Aside from air travel, you also have the option to travel by sea. 
+			You can reach Bohol via fast craft from Cebu, Dumaguete, Siquijor, and Camiguin.</p>
+			<br>
+			<h3 id="Flights"><i class="fas fa-plane"> By Flights</h3></i>
+			<br>
+			<a href="flight.jpg" target="sameWindow">
+			<img class="img" src="flight.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>
+			<br>
+			<p>It is the fastest route when going to Boracay. 
+			It is also the most accessible since flights are coming from different parts of the Philippines and even several countries outside the Philippines.</p>
+			<br>
+			<p>If you’re coming from Manila, the capital of the Philippines located in Luzon, take a 1-hour domestic flight from the Ninoy Aquino International Airport to Caticlan. 
+			Flying in from Clark to Boracay via Caticlan is also an option if you’re coming from the Northern part of Luzon or if you want to avoid the traffic in Manila. 
+			Airfares from Clark are usually lower than Manila.</p>
+			<br>
+			<p>If you’re coming from the Visayas, there are direct flights to Caticlan from Cebu City’s Mactan International Airport. 
+			If you’re coming from Mindanao, there are direct flights from Davao Francisco Bangoy International Airport to Caticlan. 
+			From Caticlan Airport, take a 10-15 minute tricycle ride going to Caticlan Jetty Port. </p>
+			<br>
+			<h3 id="Ferry"><i class="fas fa-anchor"> By Ferry </i></h3>
+			<br>
+			<a href="roro.jpg" target="sameWindow">
+			<img class="img" src="roro.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<br>
+			<p>Most locals ride a ferry going to Boracay as it's much cheaper. 
+			If you don't mind traveling for long hours or a couple of days, then you might try this mode of transportation. 
+			Take note that the main port for Boracay is Caticlan Jetty Port. Below are some of the best ways to go to this port to the island.</p>
+			<br>
+			<h4 id="Kalibo">Kalibo Airport </h4>
+			<br>
+			<a href="kalibo.jpg" target="sameWindow">
+			<img class="img" src="kalibo.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>
+			<br>
+			<blockquote><blockquote><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A flight to Kalibo in Aklan, a more significant island near Boracay, 
+			is significantly cheaper than a direct flight to Caticlan. 
+			However, you will need to travel for 2 hours from Kalibo Airport to Caticlan Jetty Port.</p></blockquote></blockquote>
+			<br>
+			<blockquote><blockquote><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; When you land at the Kalibo Airport, 
+			you will find a multitude of transportation options that will take you to the Caticlan Jetty Port. 
+			Be sure to check whether it’s cost-effective or if it will be more expensive for you. Your land travel options to Caticlan include riding a bus or van.  </p></blockquote></blockquote>
+			<br>
+			<h4 id="Pier">Batangas Pier</h4>
+			<br>
+			<a href="batangas.jpg" target="sameWindow">
+			<img class="img" src="batangas.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<br>
+			<blockquote><blockquote><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; If you’re coming from Manila or Southern Luzon, 
+			you can go to Boracay by sea through 2Go Travel ferry. It takes about 9 hours from Batangas Pier to Caticlan Jetty Port. 
+			From Manila, you will receive a 2-hour land bus to Batangas Pier from Cubao or Pasay bus terminals.</p></blockquote></blockquote>
+			<br>
+			<h3 id="RoRo">By Direct RoRo Vessel</h3>
+			<br>
+			<a href="ferry.jpg" target="sameWindow">
+			<img class="img" src="ferry.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<br>
+			<p>If you would like to take the more scenic but much longer trip to Boracay, 
+			you can ride the Roll On, Roll Off (RoRo). 
+			RoRo ships are vessels that are designed to carry wheeled vehicles. </p>
+			<br>
+			<br>
+			<br>
+			<h3 id="Private">By Private Car from Manila</h3>
+			<br>
+			<br>
+			<a href="van.jpg" target="sameWindow">
+			<img class="img" src="van.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>
+			
+			<p>You can also take the RoRo route using your own or hired car. 
+			It can be a good option when traveling in a big group or with your family and if you don’t mind the long travel hours. 
+			The same bus route will apply, except that you will drive to the Batangas Pier and you must book your RoRo tickets on your own when you get there.</p>
+			<br>
+			<p>Additionally, you can’t charter your vehicle into Boracay Island, so you need to leave your car at the Caticlan Jetty Port for a parking fee per night. 
+			Depending on the size of your vehicle, this may cost you a lot. You also need to pay for the passenger fee and terminal fee during vessel transfers.</p>
+		</div>
+		<br>
+	</div>
+</div>
+		
+		<div class="rightcolumn">
+			<div class="card">
+			  <h3>Table of Contents</h3>
+			  <br>
+				<div = class="link">
+					<a class="first after" href="#Itinerary" title=" Anchor">Sample Itinerary</a><br><br>
+					<a class="first after" href="#Time" title="Anchor">Best Time To Go There</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Dry" title="Anchor">Dry and Summer Season</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Peak" title="Anchor">Peak Season</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Climate" title="Anchor">Climate and Weather</a><br><br>
+					<a class="first after" href="#Directions" title="Anchor">How to Get There?</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Flights" title="Anchor">By Flights</a><br><br>
+					&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a class="first after" href="#Luzon" title="Anchor">From Luzon or Mindanao</a><br><br>
+					&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a class="first after" href="#Outside" title="Anchor">From Outside</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Ferry" title="Anchor">By Ferry</a><br><br>
+					&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a class="first after" href="#FerCebu" title="Anchor">From Cebu</a><br><br>
+					&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; <a class="first after" href="#Dumaguete" title="Anchor">From Dumaguete</a><br><br>
+				</div>
+			</div>
+		<br>
+			<div class="card">
+			  <h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+			</div>
+		</div>
+			<div class = "guide" style="background-color:white;">
+		<br>
+		<h1 style="color:#1A385A;">Read more of our Aklan Guide</h1>
+	<div class = "margin">
+		<div class="row">
+			
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg">
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div></a>
+				</div>
+				<br>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg">
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div></a>
+				</div>
+				<br>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg">
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div></a>
+				</div>
+				<br>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg">
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div></a>
+				</div>
+				<br>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

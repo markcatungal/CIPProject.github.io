@@ -1,0 +1,592 @@
+
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Ilocos Norte</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+	
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Fake image */
+	.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	.h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		color:#1A385A;
+		font-size:40px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	.h3{
+		font-weight:100px;
+		text-align:center;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h4{
+		font-weight:100px;
+		text-align:left;
+		margin-left: 100px;
+		color:#E46F44;
+		font-size:30px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color:##3b668f;
+		font-size:20px;
+	}
+	
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p1{
+		font-family: 'Poppins', sans-serif;
+		color:#82331a;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 40px;
+	}
+	
+	.p .img{
+		width: 500px;
+		height: 300px;	
+		padding: 20px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+	}
+	
+	ul{
+		list-style-image: linear-gradient(to left bottom, red, blue);
+		margin-left: 80px;
+	}
+	
+	.line1{
+		border: 7px solid #2691a5;
+		width: 99%;
+	}
+	.line2 {
+		border-top: 5px dotted #6b311f;
+		border-bottom: 5px dotted #fff;
+		width: 99%;
+	}
+	
+	.line3{
+		border: 10px inset #2691a5;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: #ddd;
+	  margin-top: 20px;
+	}
+	
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:right;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.link{
+		  margin:10px 0;
+		  font-family: 'Poppins', sans-serif;
+	}
+		
+	.link a,.link a:visited,.link a:hover,.link a:active{
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+			position:relative;
+		  transition:0.5s color ease;
+			text-decoration:none;
+			color: #00719c;
+			font-size:20px;
+	}
+	.link a:hover{
+			color:#d18e11;
+	}
+	.link a.before:before,.link a.after:after{
+		  content: "";
+		  transition:0.5s all ease;
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+		  position:absolute;
+	}
+	.link a.before:before{
+		  top:-0.25em;
+	}
+		.link a.after:after{
+		  bottom:-0.25em;
+	}
+	.link a.before:before,.link a.after:after{
+		  height:5px;
+		  height:0.35rem;
+		  width:0;
+		  background:#d18e11;
+	}
+	.link a.first:after{
+		  left:0;
+	}
+	.link a.before:hover:before,a.after:hover:after{
+		  width:100%;
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	</style>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="ilocosnorth.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>Ilocos Norte Itinerary: Ultimate Travel Guide</h1>
+    
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="title">
+	<br>
+		<h2>Ilocos Norte Travel Guide</h2>
+		<h5>March 14, 2021</h5>
+		<br>
+	</div>	
+	<br>
+	
+	
+<div class="leftcolumn">
+	<div class = "p">
+		<p>Ready to go on an adventure to Laoag and the nearby Ilocos Norte tourist spots? Check out our sample itinerary to make sure you get the best out of your trip to The Sunshine City.</p>
+		<h3 class="h3" id="Itinerary"> Sample Itinerary </h3>
+		<div class = "box">
+			<div class="content">
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 1: Arrival + DIY Walking Tour</b></i></h3>
+						<ul>
+							<li>11:55 AM - Departure from NAIA Terminal 2 to Laoag Airport </li>
+							<li>01:05 PM - ETA in Laoag Airport </li>
+							<li>01:30 PM - Late lunch at La Preciosa </li>
+							<li>03:00 PM - Late check-in at Viven Hotel, rest and freshen up </li>
+							<li>04:00 PM - 06:00 PM - Take a DIY walking tour around the city </li>
+							<li>06:00 PM - Dinner near the hotel </li>
+							<li>08:00 PM - Call it a day. Start bright and early the next day </li>							
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 2: City Tour + Culture + Food Trip</b></i></h3>
+						<br>
+						<ul>
+							<li>08:00 AM - Leisurely breakfast at the hotel</li>
+							<li>09:00 AM - 12:00 NN Start of Paoay Tour. Visit Paoay Church,
+							<br>&nbsp;&nbsp;&nbsp;&nbsp;Malacañang of the North and Paoay Lake, which are often included
+							<br>&nbsp;&nbsp;&nbsp;&nbsp; in a cultural tour in Ilocos Norte.</li>
+							<li>12:00 NN - Lunch at Paoay</li>
+							<li>01:30 PM - 06:00 PM Continuation of cultural city tour. Visit Museo<br>&nbsp;&nbsp;&nbsp;&nbsp; Ilocos Norte and chill at the Rizal Amusement Park </li>
+							<li>06:00 PM - Dinner at Saramsam Ylocano </li>
+							<li>08:00 PM - Back at the hotel. Call it a day. Start bright and early<br>&nbsp;&nbsp;&nbsp;&nbsp; the next day</li>							
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 3: Sightseeing + Sandboarding</b></i></h3>
+						<br>
+						<ul>
+							<li>8:00 AM - Leisurely breakfast at the hotel</li>
+							<li>09:30 - 12:00 NN - Visit the Bangui Windmills, Patapat Viaduct, and<br>&nbsp;&nbsp;&nbsp;&nbsp; Kapurpurawan Rock Formation, which are often combined in an<br>&nbsp;&nbsp;&nbsp;&nbsp;  Ilocos Norte tour</li>
+							<li>01:00 PM - Late lunch in Laoag City </li>
+							<li>02:00 - 05:00 PM - La Paz Sand Dunes: Go on a 4x4 adventure,<br>&nbsp;&nbsp;&nbsp;&nbsp; try sandboarding</li>
+							<li>06:00 PM - Dinner at Cuisine de Iloco </li>
+							<li>08:00 PM - Back at the hotel. Call it a day. Start bright and early<br>&nbsp;&nbsp;&nbsp;&nbsp; the next day</li>
+						</ul> 
+					<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 4: Museum Tour +  Vigan Excursion + <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Departure</b></i></h3>
+						<br>
+						<ul>
+							<li>09:00 AM - Late breakfast at the hotel </li>
+							<li>12:00 NN - Hotel check out </li>
+							<li>12:30 PM - Lunch near the hotel </li>
+							<li>01:30 PM - 06:00 PM - Join a Vigan trip from Laoag. Visit Plaza <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Burgos, Crisologo Museum, Calle Crisologo, Syquia Mansion, and <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;many more</li>
+							<li>06:00 PM - 07:00 PM - Back to Laoag. Dinner. Do some shopping<br>&nbsp;&nbsp;&nbsp;&nbsp; for souvenirs </li>
+							<li>07:30 PM - Travel to Laoag Airport </li>
+							<li>09:20 PM - Departure from Laoag Airport </li>
+							<li>11:30 PM - ETA in NAIA Terminal 2</li>							
+						</ul> 
+				<br>
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr class="line3">
+	<h2 class="h2" id="Time">Best Time To Go There</h2>
+	<hr class="line3">
+	<br>
+
+		<div class = "p">
+			
+			<a href="ilocossouth.jpg" target="sameWindow">
+			<img class="img" src="ilocossouth.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>	
+				
+			<p>If you don’t want to sweat buckets during your trip, the best time to visit Laoag is during the cooler months of November to February. Christmas preparations are already in full swing by the time November comes around, so expect a lot of holiday activities during this time.</p>
+			<h4 id="Dry">Dry and Summer Season | March to June</h4>
+			<a href="ilocoseast.jpg" target="sameWindow">
+			<img class="img" src="ilocoseast.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<p>are the hottest months with temperatures reaching a high of 35 degrees Celsius, with minimal rainfall. These months also coincide with Holy Week and summer break for most schools, so you may see a lot of families with school-age children in Laoag during your visit</p>
+			<h4 id="Wet"> Rainy Season | July to October</h4>			
+			<p>The months of July to October bring rain, and sometimes typhoons. The city experiences an average of 4 to 5 typhoons every year, so make sure to check weather reports regularly, especially if you plan your trip around these months.</p> 
+		</div><br>
+	
+	<hr class="line2">
+	<h2 class="h2" id="Directions">How to Get There?</h2>
+	
+		<div class = "p">	
+		
+			<p>Ilocos Norte, Philippines has an International Airport accepting tourists from various ports of origin:  45 minutes from Manila (daily), Philippines; 55 minutes from Kaohsiung, Taiwan ( Chartered flights); 80 Minutes from Guangzhou, Hongkong & Taipei; 2.15 hours from  Shanghai.</p>
+			
+			<h4 id="PP">By Land</h4>			
+			<a href="bus.jpg" target="sameWindow">
+			<img class="img" src="bus.jpg" alt="Beach" style="float: left" title="Beach">
+			</a>
+			
+			<p>By land, various bus lines serve the Manila-Laoag route for an 8-hour drive. Ilocos Norte is just 477 kilometers north of Manila. It can also be reached 4 hours from Baguio City.</p>
+
+			<p>Laoag is about 487km from Manila, and it takes an average of 10 hours to travel to the city. The land travel to Laoag may be longer than a flight from Manila but it’s cheaper. Here are some of your transport options.</p>
+			
+			<h4 id="PP">Private Car From Manila</h4>
+            <p>You can either bring a private car or hire a private van. The fastest way to drive to Laoag is via the North Luzon Expressway (NLEX), then take the exit to SCTEX/Clark Airport.
+            From there, follow the signs for Tarlac/Baguio/TPLEX, continue onto the Tarlac-Pangasinan-La Union Expressway, and traverse the Mac Arthur Highway to get to the city. Total driving time from Manila to Laoag is about 8 hours.</p>  	
+	</div>
+</div>
+		
+		<div class="rightcolumn">
+			<div class="card">
+			  <h3>Table of Contents</h3>
+				<div = class="link">
+					<a class="first after" href="#Itinerary" title=" Anchor">Sample Itinerary</a><br><br>
+					<a class="first after" href="#Time" title="Anchor">Best Time To Go There</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Dry" title="Anchor">Dry and Summer Season</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Wet" title="Anchor">Wet and Rainy Season</a><br><br>
+					<a class="first after" href="#Directions" title="Anchor">How to Get There?</a><br><br>
+					&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a class="first after" href="#PP" title="Anchor">By Land / Bus</a><br><br>
+					&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#PP" title="Anchor">Via Private Car From Manila</a><br><br>
+					
+				</div>
+			</div>
+		<br>
+			<div class="card">
+			  <h3>Popular Post</h3>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+			</div>
+		</div>
+<div class = "guide">
+		<h1 class = "title">Read more of our Palawan Guide</h1>
+	<div class = "margin">
+		<div class="row">
+			
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Palawan</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Palawan</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

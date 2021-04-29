@@ -1,0 +1,628 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Iloilo</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+	
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Fake image */
+	.fakeimg {
+		background-color: #aaa;
+		width: 100%;
+		padding: 20px;
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	.h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		color:#1A385A;
+		font-size:40px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	.h3{
+		font-weight:100px;
+		text-align:center;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h4{
+		font-weight:100px;
+		text-align:left;
+		margin-left: 100px;
+		color:#E46F44;
+		font-size:30px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color:##3b668f;
+		font-size:20px;
+	}
+	
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p1{
+		font-family: 'Poppins', sans-serif;
+		color:#82331a;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 40px;
+	}
+	
+	.p .img{
+		width: 500px;
+		height: 300px;	
+		padding: 20px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+	}
+	
+	ul{
+		list-style-image: linear-gradient(to left bottom, red, blue);
+		margin-left: 80px;
+	}
+	
+	.line1{
+		border: 7px solid #2691a5;
+		width: 99%;
+	}
+	.line2 {
+		border-top: 5px dotted #6b311f;
+		border-bottom: 5px dotted #fff;
+		width: 99%;
+	}
+	
+	.line3{
+		border: 10px inset #2691a5;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.footer {
+	  padding: 20px;
+	  text-align: center;
+	  background: #ddd;
+	  margin-top: 20px;
+	}
+	
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:right;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.link{
+		  margin:10px 0;
+		  font-family: 'Poppins', sans-serif;
+	}
+		
+	.link a,.link a:visited,.link a:hover,.link a:active{
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+			position:relative;
+		  transition:0.5s color ease;
+			text-decoration:none;
+			color: #00719c;
+			font-size:20px;
+	}
+	.link a:hover{
+			color:#d18e11;
+	}
+	.link a.before:before,.link a.after:after{
+		  content: "";
+		  transition:0.5s all ease;
+		  -webkit-backface-visibility:hidden;
+				  backface-visibility:hidden;
+		  position:absolute;
+	}
+	.link a.before:before{
+		  top:-0.25em;
+	}
+		.link a.after:after{
+		  bottom:-0.25em;
+	}
+	.link a.before:before,.link a.after:after{
+		  height:5px;
+		  height:0.35rem;
+		  width:0;
+		  background:#d18e11;
+	}
+	.link a.first:after{
+		  left:0;
+	}
+	.link a.before:hover:before,a.after:hover:after{
+		  width:100%;
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	</style>
+  	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<!--CATUNGAL, MARK ANGELO S.-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="Iloilo.jpeg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>Iloilo Itinerary: Ultimate Travel Guide</h1>
+    
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="title">
+	<br>
+			<h2> Iloilo Travel Guide</h2>
+		<h5>March 14, 2021</h5>
+		<br>
+	</div>	
+	<br>
+	
+	
+<div class="leftcolumn">
+	<div class = "p">
+		<p>Exploring the top destinations in Iloilo is possible if your schedule permits it, but it requires a well-prepared itinerary to make it possible. 
+		We recommend at least 3-5 days to pull this off. You can also choose to visit just one or two destinations in Iloilo. 
+		Here’s a sample itinerary for Iloilo that you can take inspiration from: </p>
+		<h3 class="h3" id="Itinerary"> Sample Itinerary </h3>
+		<div class = "box">
+			<div class="content">
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 1: Ancestral Houses + <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Garin Farm</b></i></h3>
+						<ul>
+							<li>06:00 AM - Arrival in Iloilo International Airport,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; travel to hotel for check-in</li>
+							<li>07:30 AM - Breakfast at Netong’s Original <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;La Paz Batchoy and coffee at Madge Cafe</li>
+							<li>09:00 AM - Go on a city tour to explore the <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ancestral houses of Iloilo</li>
+							<li>12:00 NN - Lunch at Tatoy’s Manokan and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seafood</li>
+							<li>01:00 PM - Continue city tour</li>
+							<li>03:00 PM - Eat Pancit Molo at Camiña Balay <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;nga Bato</li>
+							<li>03:30 PM - Travel to Garin Farm</li>
+							<li>04:30 PM - Explore Garin Farm</li>
+							<li>06:00 PM - Travel back to the city</li>
+							<li>07:00 PM - Dinner and drinks at Smallville</li>
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 2: Islas de Gigantes</b></i></h3>
+						<br>
+						<ul>
+							<li>04:00 AM - Early breakfast</li>
+							<li>05:00 AM - ETD to Carles Port</li>
+							<li>08:00 AM - ETA in Carles Port, register and <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start Islas de Gigantes island-hopping tour</li>
+							<li>12:00 NN - Scallops lunch at one of the <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;islands</li>
+							<li>01:30 PM - Continue the island-hopping tour</li>
+							<li>03:00 PM - ETD to Carles Port</li>
+							<li>04:30 PM - ETA at Carles Port, travel back to <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Iloilo City</li>
+							<li>07:30 PM - ETA at Iloilo City, wash up</li>
+							<li>08:30 PM - Dinner and drinks at Smallville</li>
+						</ul> 
+				<br>
+					<h3><i class="fas fa-map-pin" style='color:#922d3f;'>&nbsp;&nbsp;<b>Day 3:  Heritage Churches + Esplanade + Calle Real </b></i></h3>
+						<br>
+						<ul>
+							<li>07:00 AM - Breakfast</li>
+							<li>08:00 AM - Start city tour to explore heritage <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; churches</li>
+							<li>12:00 NN - Lunch at Breakthrough </li>
+							<li>01:00 PM - Continue heritage church tour</li>
+							<li>03:00 PM - Try Molo bibingka in front of Molo <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Church</li>
+							<li>04:00 PM - Stroll along River Esplanade</li>
+							<li>05:00 PM - Explore Calle Real and taste the <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Queen Siopao at Roberto’s</li>
+							<li>06:00 PM - Dinner and drinks at Smallville</li>
+							<li>07:30 PM - Shop for souvenirs</li>
+							<li>09:00 PM - Travel to Iloilo International Airport <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for late night flight</li>
+						</ul> 
+					<br>
+			</div>
+		</div>
+	</div>
+	<br>
+	<hr class="line3">
+	<h2 class="h2" id="Time">Best Time To Go There</h2>
+	<hr class="line3">
+	<br>
+
+		<div class = "p">
+			
+			<a href="island.jpg" target="sameWindow">
+			<img class="img" src="island.jpg" alt="Island" style="float: left" title="Island">
+			</a>	
+				
+			<p>Iloilo is a perfect destination almost year-round. However, you might not be able to enjoy the experience during the typhoon months from June to August, especially if you plan to go to the beaches or do island-hopping tours. <br>
+			Make sure to check the weather update for incoming typhoons. If you want to combine seeing the tourist spots of Iloilo with a festive event, then you better time your visit during the Dinagyang Festival. </p>
+			<h4 id="Dry">Dry and Summer Season | November to May</h4>
+			<a href="dry.jpg" target="sameWindow">
+			<img class="img" src="dry.jpg" alt="Beach" style="float: right" title="Beach">
+			</a>
+			<p>Most attractions in Iloilo are outdoors or will require you to ride a boat. That’s why the best months to plan your Iloilo trip is during the months where it’s sunny almost every day, from November to May. This covers the summer season in the Philippines which starts in March until mid-May. </p>
+			<h4 id="Festival">Dinagyang Festival | January</h4>
+			<a href="dinagyang.jpg" target="sameWindow">
+			<img class="img" src="dinagyang.jpg" alt="Festival" style="float: right" title="Festival">
+			</a>
+			<p>Rock and dance to the stomping drumming beats of this festival, known for its lively music, graceful dances, and colorful costumes. <br>
+			Dinagyang Festival, celebrated every third or fourth Sunday of January is one of the most popular and oldest festivals in the Philippines. This is a good time to experience Iloilo as everyone is in a jovial mood celebrating the festival by dancing in unison to the lively rhythms. </p>
+			<h4 id="Paraw">Paraw-Regatta | February</h4>
+			<a href="paraw.jpg" target="sameWindow">
+			<img class="img" src="paraw.jpg" alt="Paraw-Regatta" style="float: right" title="Paraw-Regatta">
+			</a>
+			<p>Believed to be Asia’s oldest traditional sea craft, the Paraw Regatta gathers seafarers for a race over the waters of Iloilo Strait from Iloilo City to the island of Guimaras, an island province beside Iloilo. <br>
+			Aboard colorful Paraw sailboats, in dozens and sometimes numbering to a hundred, it dishes a spectacular sight as each Paraw glides smoothly over the sea. <br>
+			The design of modern-day Paraws still possesses the original design of the Paraw sailboats of the first settlers of Iloilo who came from the island of Borneo in the early 13th century. First started in 1973, the Paraw Regatta is celebrated every 3rd weekend of the month of February. </p> 
+			<h3 id="Climate">Climate and Weather</h3>
+			<p>Iloilo has a tropical climate and only has two seasons, dry and wet. The average temperature is 27.1 °C. The driest month is February, while the rainiest is August. The warmest month is during May, and the coldest temperature is felt usually around December to January or the holiday season.</p>
+			
+			
+			<a href="climate.png" target="sameWindow">
+			<img class="img1" src="climate.png" alt="Climate" title="Climate">
+			</a>
+			<br>
+		</div><br>
+	
+	<hr class="line2">
+	<h2 class="h2" id="Directions">How to Get There?</h2>
+	
+		<div class = "p">	
+		
+			<p>The province of Palawan and its top destinations are accessible via land, sea, and air travel. 
+			Puerto Princesa is often the gateway to the province of Palawan since more flights are going here than to other airports. 
+			Your choice of entry point will affect your budget and itinerary, so it's best to look into which place best fits your preferences.</p>
+			
+			<h3 id="Flights"><i class="fas fa-plane"> By Flights</h3></i>
+			
+			<a href="flight1.jpg" target="sameWindow">
+			<img class="img" src="flight1.jpg" alt="Flights" style="float: left" title="Flights">
+			</a>
+			
+			<p>Iloilo International Airport hosts a number of airlines that flies directly to the city from various cities in the Philippines (Cebu, Clark, Davao, Cagayan de Oro, General Santos, Puerto Princesa, Cuyo and Sipalay) and even from a few international destinations such as Hong Kong and Singapore. <br>
+			Leading airlines such as Philippine Airlines, Cebu Pacific Air and Air Asia are now making Iloilo airport as one of the major hubs in the country. Travel time by plane to Iloilo from Manila is just around 1 hour, and 30 minutes from Cebu. From Hongkong, it’s 2.5 hours away, and from Singapore, it’s 3.5 hours away.<p>
+			
+			<h3 id="Ferry"><i class="fas fa-anchor"> By Ferry</i></h3>
+			
+			<a href="ferry.jpg" target="sameWindow">
+			<img class="img" src="ferry.jpg" alt="Ferry" style="float: left" title="Ferry">
+			</a>
+			
+			<p>There are four main seaports in Iloilo: the Domestic Port in Fort San Pedro, the International Port in Loboc, the Ortiz Port (which serves Guimaras to Iloilo and vice versa for just 15 minutes) and the Muelle Loney Port (serving Iloilo to Bacolod trips, around 1.5 hours of travel time). Giant transport shipping company 2Go also sails from Manila to Iloilo City for around 20 hours. <p>
+			
+			<h3 id="Bus"><i class="fas fa-bus"> By Bus</i></h3>
+			
+			<a href="ferry.jpg" target="sameWindow">
+			<img class="img" src="Bus.jpg" alt="Bus" style="float: left" title="Bus">
+			</a>
+			
+			<p>Iloilo is the transportation hub of Panay Island with various bus companies such as Ceres Bus traveling directly from Boracay (4-5 hours), Kalibo in Aklan (3 hours), Roxas City in Capiz (2 hours) and San Jose in Antique (3-4 hours). <br>
+			A RoRo (roll-on, roll-off) bus service connecting Manila to Iloilo also operates daily (around 20 hours).<p>
+		</div>
+		<br>
+	</div>
+</div>
+		
+		<div class="rightcolumn">
+			<div class="card">
+			  <h3>Table of Contents</h3>
+				<div = class="link">
+					<a class="first after" href="#Itinerary" title=" Anchor">Sample Itinerary</a><br><br>
+					<a class="first after" href="#Time" title="Anchor">Best Time To Go There</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Dry" title="Anchor">Dry and Summer Season</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Festival" title="Anchor">Dinagyang Festival</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Paraw" title="Anchor">Paraw-Regatta</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Climate" title="Anchor">Climate and Weather</a><br><br>
+					<a class="first after" href="#Directions" title="Anchor">How to Get There?</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Flights" title="Anchor">By Flights</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Ferry" title="Anchor">By Ferry</a><br><br>
+					&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<a class="first after" href="#Bus" title="Anchor">By Bus</a><br><br>
+					
+				</div>
+			</div>
+		<br>
+			<div class="card">
+			  <h3>Popular Post</h3>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+			</div>
+		</div>
+<div class = "guide">
+		<h1 class = "title">Read more of our Iloilo Guide</h1>
+	<div class = "margin">
+		<div class="row">
+			
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Iloilo</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Iloilo</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Iloilo</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Iloilo</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Iloilo</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Iloilo</h3>
+			</div>
+		  
+			<div class="column">
+				<div class="last">
+					<a href="Album/album1.1.jpg" target="_blank">
+					<img src="Palawan1.jpg"></a>
+					<div class="overlay">
+						<div class="text">8 Things To Do in Iloilo</div>
+					</div>
+				</div>
+				<h3>8 Things To Do in Iloilo</h3>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

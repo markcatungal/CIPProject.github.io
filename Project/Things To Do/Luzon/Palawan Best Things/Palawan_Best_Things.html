@@ -1,0 +1,659 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Palawan Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+	
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #3b668f;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 4px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 200px;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	.responsive {
+		padding: 0 10px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 50%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	}
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:left;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>6 THINGS TO DO WHEN IN PALAWAN</h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Palawan Travel Tips</h2>
+		<br>
+			<h5>March 28, 2021</h5>
+		<br>
+			<h5><i>by Jacob Belecina</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Our list of the best things to do in Palawan comprises just a few of the must-visit places at hand in the largest province of the 
+			Philippines. Covering an area of 14,650 sq km and over 1,700 islands, Palawan Province marks the western border of the country. 
+			This huge territory features so many stunning areas that it's a tough task to pick out a manageable amount from the huge 
+			choice of stunning attractions on offer.</p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="3rdpic.jpg">
+		  <img src="3rdpic.jpg" alt="Northern Lights" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="4thpic.jpg">
+		  <img src="4thpic.jpg" alt="Mountains" width="600" height="400">
+		</a>
+		
+	  </div>
+	</div>
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>Palawan has only recently become a popular spot for international tourists, 
+			thanks mainly to the scuba divers who were the first visitors from abroad to explore this area. 
+			Nowadays, names such as El Nido, Coron, and Puerto Princesa have started to be well-known among travellers, 
+			and many of the popular attractions in Palawan belong to these 3 prime destinations in the province.</p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  Island Hop in Honda Bay</li>
+			<br>
+				<div class = "p">
+					<p>45-minutes from the capitol of Palawan, Honda bay offers an island hopping tour that will make all of your vacation dreams come true.</p>
+					<br>
+					<p>You’ll explore Pandan Island, Cowrie Island, Luli Island, Starfish Island, and Verde Island where the famous Dos Palmas resort is located. 
+					All of these islands offer out-of-this-world white sand beaches with turquoise water so beautiful that that you might get a little emotional.</p>
+					<br>
+							<a href="one.jpg" target="sameWindow">
+								<img class="img1" src="one.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>You can spend the whole day island hopping in Honda Bay where you’ll have the opportunity to snorkel, 
+					explore the inland of the islands, and splash around in the water. These tours typically provide lunch 
+					and snacks for your trip.</p>
+				<br>
+				</div>
+			<li class="places" id="two"> Scuba Diving in El Nido</li>
+			<br>
+				<div class = "p">
+					<p>If you think what you’re seeing above ground is amazing, take a dive underwater in Bacuit Bay.</p>
+					<br>
+					<p>It’s no surprise that dive sites around El Nido are rich in marine life and thrilling topography including a 50-meter underwater cliff and a 12-meter underwater tunnel. Expect to see animals such as spotted Mata Rays and fully-grown green sea turtles. Take a night dive and you’ll see even more elusive creatures such as seahorses, shrimp and cat sharks.</p>
+					<br>
+							<a href="two.jpg" target="sameWindow">
+								<img class="img1" src="two.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>You can take any and all of the diving courses here for pretty decent prices.</p>
+				<br>
+				</div>
+			<li class="places" id="three"> Ugong Rock Adventures</li>
+			<br>
+				<div class = "p">
+					<p>Ugong Rock is a natural formation just north of Puerto Princessa that is beautiful, wild, and makes a funny noise when you tap it. Ugong Rock Adventures is a tour company that has built a triple threat of exhilarating fun around this formation and travelers love it.</p>
+					<br>
+							<a href="three.jpg" target="sameWindow">
+								<img class="img1" src="three.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>Crawl in and out of rock caves with spelunking, climb up to the zipline as it catapults you through the jungle at high speeds, and trek through the jungle on some strategic trails that lead to incredible views.</p>
+				<br>
+				</div>
+			<li class="places" id="four"> Visit Port Barton</li>
+			<br>
+				<div class = "p">
+					<p>Venture over to Port Barton, a sleepy fishing town on the North West coast of Palawan. Think of Port Barton as a less trendy, less crowded version of El Nido where you enjoy all of the same attractions for half the price.</p>
+					<br>
+					<p>Go kayaking on the sea, explore rocky cliff sides, get a good tan while laying on a sandy beach- you get the picture. See how locals live as they fish, take their buffalo on a walk, or head to school.</p>
+					<br>
+							<a href="four.jpg" target="sameWindow">
+								<img class="img1" src="four.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>You can find plenty of budget accommodation here at the expense of electricity. That is, there isn’t any. Most guesthouses in Port Barton run on generators that turn off at night. No fans and no ATMs, either.</p>
+				<br>
+				</div>
+			<li class="places" id="five"> Beaches of El Nido<li>
+			<br>
+				<div class = "p">
+					<p>Some of the most beautiful beaches in the entire world can be found in the north of Palawan in the province of El Nido. Literally, every beach is more beautiful than the next with white powdery sand, turquoise water, and many surrounded by unique towering limestone cliffs.</p>
+					<br>
+							<a href="five.jpg" target="sameWindow">
+								<img class="img1" src="five.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>Visit Secret Beach tucked away in a hidden cove, Nacpan Beach which is 4-kilometers of smooth sand and coconut trees, Pangalusian Beach that looks like a post card, Las Cabanas Beach with warm water perfect for swimming, and the list goes on.</p>
+				<br>
+				</div>
+			<li class="places" id="six"> Underground River<ol>
+			<br>
+				<div class = "p">
+					<p>At 8.2 kilometers of winding water, this is one of the longest underground rivers in the world! Officially labeled the ‘7th New Wonder of the Natural World’, the underground river in Palawan is a must-do.</p>
+					<br>
+					<p>You’ll take a short hike through the jungle where monkeys will come out and beg you for snacks, and then you’ll reach small boats at the mouth of the cave. Climb in and you’ll paddle together through complex cave tunnels with hanging bats and calm waters. You’ll learn all about the formations from your friendly guide as you go.</p>
+					<br>
+							<a href="six.jpg" target="sameWindow">
+								<img class="img1" src="six.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				<div class = "p">
+					<p>Recognize that these tours are so popular that they can be full for a few days in advance. Plan your trip now by booking with a tour group online.</p>
+				</div>
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Island Hop in Honda Bay</a><br>
+					<a class="conte" href="#two">Scuba Diving in El Nido</a><br>
+					<a class="conte" href="#three">Ugong Rock Adventures</a><br>
+					<a class="conte" href="#four">Visit Port Barton</a><br>
+					<a class="conte" href="#five">Beaches of El Nido</a><br>
+					<a class="conte" href="#six">Underground River</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+		</div>
+	
+			<div class = "guide">
+		<br>
+				<h1 class = "title">Read more of our Palawan Guide</h1>
+					<div class = "margin">
+						<div class="row">
+			
+							<div class="column">
+								<div class="last">
+										<a href="Album/album1.1.jpg" target="_blank">
+											<img src="Palawan1.jpg"></a>
+												<div class="overlay">
+														<div class="text">PALAWAN ITINERARY: <br>ULTIMATE TRAVEL GUIDE</div>
+												</div>
+								</div>
+														<h3>PALAWAN ITINERARY: ULTIMATE TRAVEL GUIDE</h3>
+							</div>
+						
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">PALAWAN FOODS</div>
+											</div>
+								</div>
+												<h3>PALAWAN FOODS</h3>
+							</div>
+			
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">PALAWAN</div>
+											</div>
+								</div>
+											<h3>PALAWAN</h3>
+							</div>
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">PALAWAN</div>
+											</div>
+								</div>
+												<h3>PALAWAN</h3>
+							</div>
+						</div>
+					</div>
+					
+</div>
+</body>
+</html>

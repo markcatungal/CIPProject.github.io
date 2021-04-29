@@ -1,0 +1,439 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Davao Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background-image: linear-gradient(to right, #0d6178 3%, #c3e0e5 18%, #bfdde3 82%, #0d6178 97%);
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		background: -webkit-linear-gradient(#1A385A 40%, #466887 80%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align:center;
+		letter-spacing: 15px;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #17657a;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 8px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 350px;
+	}
+
+	div.desc {
+		padding: 15px;
+	}
+
+	.responsive {
+		padding: 0 20px;
+		float: left;
+		width: 500px;
+		margin-left: 30px;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 90%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+		margin-left: 50px;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<!--CATUNGAL, MARK ANGELO S.-->
+    <!--04.22.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1> 7  PLACES TO STAY IN SIARGAO </h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Siargao : Accommodation</h2>
+		<br>
+			<h5>April 22, 2021</h5>
+		<br>
+			<h5><i>Mark Catungal</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Book a Hotel for your Vacation in Davao City. No Reservation Costs. Great Rates. We speak your language. Secure Booking. Get Instant Confirmation. Best Price Guarantee. Read Real Guest Reviews. 24/7 Customer Service. Save 10% with Genius. </p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>Book a Hotel for your Vacation in Davao City. No Reservation Costs. Great Rates. We speak your language. Secure Booking. Get Instant Confirmation. Best Price Guarantee. Read Real Guest Reviews. 24/7 Customer Service. Save 10% with Genius. </p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  Lampara Siargao Boutique Hostel</li>
+			<br>
+				<div class = "p">
+					<p>Lampara Siargao is an oceanfront boutique hostel conveniently situated on the exotic island of Siargao. The lounge area has a calm atmosphere where guests can chill and enjoy the cool island breeze and sea views of General Luna. With its air-conditioned glamping tents and 8-bed mixed dorms with lockers and hot showers, guests will be assured to have comfort and convenience. Lampara’s staff are amazing and they will treat you like a family. This is the kind of place you wish you had booked after you see it when you arrive. It’s literally everything you want and needs on Siargao.</p>
+					<br>
+							<a href="one.jpg" target="sameWindow">
+								<img class="img1" src="one.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>	
+							<br>
+					<br>
+				</div>
+			
+			<li class="places" id="two"> White Banana Club</li>
+			<br>
+				<div class = "p">
+					<p>The best budget but value option accommodation on Siargao Island is called The White Banana Club in General Luna. For just $20 a night you can grab yourself a dorm room. The key attraction here is the vibe. People actually come to visit this place as it hosts sunset sessions on Fridays and there is always something social happening here, which is why people come to Siargao for the good vibes. It’s very clean and has a huge chill-out area with hammocks and bean bags for those post-surf siesta sessions.</p>
+					<br>
+							<a href="two.jpg" target="sameWindow">
+								<img class="img1" src="two.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="three"> Hiraya Surf Hostel</li>
+			<br>
+				<div class = "p">
+					<p>Hiraya Surf Hostel in General Luna provides adults-only accommodation with an outdoor swimming pool, a beautiful garden, and a bar. Located 3 minutes away from Cloud 9 Surfing Area (insane location), the hostel offers a great vibe and is equipped with fully-airconditioned bunk beds, private bathrooms, and a bar where guests can chill and chitchat. The hosts are super accommodating and they can arrange everything for their guests from island tours, motor rentals and surfing lessons for a hassle-free stay. </p>
+					<br>
+							<a href="three.jpg" target="sameWindow">
+								<img class="img1" src="three.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="four"> Nay Palad Hideaway</li>
+			<br>
+				<div class = "p">
+					<p>Nay Palad Hideaway is one of the most luxurious accommodations in the Philippines. With its beautiful outdoor pool, terrace with either garden or ocean views, comfy seating areas, and an iPad in each room for guest use. Everything is on point from the best quality food, great hospitality, an array of activities, and elegant villas. It’s one of the most picturesque and what we would call ‘Instagrammable’ from every angle. <br>
+
+					You will get total privacy and you will be treated like royalty. The spa area is nothing but pure serenity and nature. The hanging white wicker pods on the coconut trees are perfect for swinging and even for your Instagram post. If there is one place on Siargao that I would highly, highly recommend if you are not worried about the price it is Nay Palad. It is a classic Bali style of accommodation and honestly, it is picture-perfect! You need to book this one well in advance as within two-months it is almost always booked out that far ahead.</p>
+					<br>
+							<a href="four.jpg" target="sameWindow">
+								<img class="img1" src="four.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			<li class="places" id="five"> Surfing Carabao Beach Houses <li>
+			<br>
+				<div class = "p">
+					<p>For those who are looking for some romantic, private and quiet place, this property is an ideal place. Surfing Carabao offers spacious bungalows with ocean views and a communal kitchen for the guest to use. The beach here is exceptional where you can chill and relax while watching the sunset- just footsteps away from your hut. GL is only 10 minutes away by motorbike if you want to grab some delicious bites. The hosts are very welcoming and I loved how they care for the environment by recycling waste and offering reusable tote bags to their guests. This is another place you need to book in advance. It’s almost always booked out at least 2-months in advance during peak season.</p>
+					<br>
+							<a href="five.jpg" target="sameWindow">
+								<img class="img1" src="five.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="six"> The Village Siargao</li>
+			<br>
+				<div class = "p">
+					<p>This place is perfect for all kinds of travelers such as couples, small families, and solo travelers who are looking for an affordable yet comfortable staycation. This B&B accommodation is located on the tranquil side of General Luna. The porch is the guests’ favorite spot to hang out while sipping their morning brewed coffee. The hosts are very friendly and they are quick to respond to all guests’ needs and requests such as arranging island hopping, tricycle rides, and many more.</p>
+					<br>
+							<a href="six.jpg" target="sameWindow">
+								<img class="img1" src="six.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			
+			<li class="places" id="seven"> Grotto Gardens<ol>
+			<br>
+				<div class = "p">
+					<p>If you want to experience and taste a simple local life, stay at Grotto Gardens. It is a beautiful and quiet accommodation with a nice view near the mangroves. It offers an amazing view from bungalows and the host family is very hospitable. They will cook delicious meals for you, help you with activities such as the firefly tour, and even invite you during a special family occasion such as a birthday. This place is recommended if you are exploring Pacifico beach, Magpupungko Rockpools, and Sugba Lagoon.</p>
+					<br>
+							<a href="seven.jpg" target="sameWindow">
+								<img class="img1" src="seven.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Lampara Siargao Boutique Hostel</a><br>
+					<a class="conte" href="#two">White Banana Club</a><br>
+					<a class="conte" href="#three">Hiraya Surf Hostel </a><br>
+					<a class="conte" href="#four">Nay Palad Hideaway</a><br>
+					<a class="conte" href="#five">Surfing Carabao Beach Houses</a><br>
+					<a class="conte" href="#six">The Village Siargao</a><br>
+					<a class="conte" href="#seven">Grotto Gardens</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+</body>
+</html>

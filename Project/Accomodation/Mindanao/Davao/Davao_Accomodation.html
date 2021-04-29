@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Davao Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background-image: linear-gradient(to right, #0d6178 3%, #c3e0e5 18%, #bfdde3 82%, #0d6178 97%);
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		background: -webkit-linear-gradient(#1A385A 40%, #466887 80%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align:center;
+		letter-spacing: 15px;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #17657a;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 8px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 350px;
+	}
+
+	div.desc {
+		padding: 15px;
+	}
+
+	.responsive {
+		padding: 0 20px;
+		float: left;
+		width: 500px;
+		margin-left: 30px;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 90%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+		margin-left: 50px;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<!--CATUNGAL, MARK ANGELO S.-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1> 7  PLACES TO STAY IN DAVAO </h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Davao : Accommodation</h2>
+		<br>
+			<h5>April 20, 2021</h5>
+		<br>
+			<h5><i>Mark Catungal</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Book a Hotel for your Vacation in Davao City. No Reservation Costs. Great Rates. We speak your language. Secure Booking. Get Instant Confirmation. Best Price Guarantee. Read Real Guest Reviews. 24/7 Customer Service. Save 10% with Genius. </p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>Book a Hotel for your Vacation in Davao City. No Reservation Costs. Great Rates. We speak your language. Secure Booking. Get Instant Confirmation. Best Price Guarantee. Read Real Guest Reviews. 24/7 Customer Service. Save 10% with Genius. </p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  OYO 604 Chateau Cinco Dormitel</li>
+			<br>
+				<div class = "p">
+					<p>Located in Davao City, 0.7 mi from SM Lanang Premier, OYO 604 Chateau Cinco Dormitel features accommodations with free WiFi and free private parking. This 2-star hotel offers room service. <br>
+					Great, friendly staff! Comfortable and spacious room with all necessary facilities for such a cheap rate. There is also a small, cosy balcony to chill at. The location is perfect with SM mall, 7eleven, atm and many eateries in walking distance. Would highly recommend this hotel :)</p>
+					<br>
+							<a href="one.jpg" target="sameWindow">
+								<img class="img1" src="one.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>	
+							<br>
+					<br>
+				</div>
+			
+			<li class="places" id="two"> Capital O 460 World Palace Hotel</li>
+			<br>
+				<div class = "p">
+					<p>Capital O 460 World Palace Hotel is set in Davao City, less than 0.6 mi from Matina Town Square and a 20-minute walk from SM City Davao. Featuring a shared lounge, the 2-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodations offers a 24-hour front desk and room service for guests.
+					<br>
+					At the hotel, each room is fitted with a wardrobe. At Capital O 460 World Palace Hotel all rooms are equipped with a desk and a flat-screen TV.
+					<br>
+					eople's Park is 2.4 mi from the accommodations, while Abreeza Mall is 3.7 mi away. The nearest airport is Francisco Bangoy International Airport, 5.6 mi from Capital O 460 World Palace Hotel.
+					<br>
+					Couples in particular like the location – they rated it 9.2 for a two-person trip.</p>
+					<br>
+							<a href="two.jpg" target="sameWindow">
+								<img class="img1" src="two.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="three"> RedDoorz Plus near Bangko Sentral Ng Pilipinas</li>
+			<br>
+				<div class = "p">
+					<p>Set within 0.7 mi of People's Park and 1.3 mi of Abreeza Mall, RedDoorz Plus near Bangko Sentral Ng Pilipinas Davao offers rooms with air conditioning and a private bathroom in Davao City. The property is around 1.9 mi from Matina Town Square, 3.1 mi from SM Lanang Premier and 3.1 mi from SM City Davao. D' Bone Collector Museum is 2.1 mi from the hotel and SMX Convention Center Davao is 3.1 mi away.
+					<br>
+					The units in the hotel are equipped with a flat-screen TV.<br>
+
+					Staff speak Filipino and English at the reception.<br>
+
+					Wakeboard Park is 11 mi from RedDoorz Plus near Bangko Sentral Ng Pilipinas Davao, while Eden Nature Park is 19 mi away. The nearest airport is Francisco Bangoy International Airport, 4.3 mi from the accommodations.</p>
+					<br>
+							<a href="three.jpg" target="sameWindow">
+								<img class="img1" src="three.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="four"> Dusit Thani Residence Davao</li>
+			<br>
+				<div class = "p">
+					<p>Located in Davao City, 2.2 mi from SM Lanang Premier, Dusit Thani Residence Davao features accommodations with a restaurant, free private parking, a fitness center and a bar. Among the facilities at this property are an ATM and a concierge service, along with free WiFi throughout the property. The accommodations offers a 24-hour front desk, room service and currency exchange for guests.<br>
+		
+					At the hotel, rooms are equipped with a desk, a flat-screen TV and a private bathroom. At Dusit Thani Residence Davao every room has a seating area.<br>
+
+					The accommodations offers a à la carte or American breakfast.<br>
+
+					Abreeza Mall is 3.7 mi from Dusit Thani Residence Davao, while People's Park is 5 mi from the property. The nearest airport is Francisco Bangoy International Airport, 0.6 mi from the hotel.<br>
+
+					Couples in particular like the location – they rated it 8.2 for a two-person trip.</p>
+					<br>
+							<a href="four.jpg" target="sameWindow">
+								<img class="img1" src="four.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			<li class="places" id="five">  OYO 496 D'Abirus Inn<li>
+			<br>
+				<div class = "p">
+					<p>Located in Davao City, 1 mi from People's Park, OYO 496 D'Abirus Inn features views of the city. With a shared lounge, the 2-star hotel has air-conditioned rooms with free WiFi, each with a private bathroom. The accommodations provides a 24-hour front desk and luggage storage space for guests.<br>
+
+					At the hotel, every room is equipped with a wardrobe. All units at OYO 496 D'Abirus Inn are equipped with a flat-screen TV with cable channels.<br>
+	
+					Matina Town Square is 1.4 mi from the accommodations, while SM City Davao is 2.2 mi away. The nearest airport is Francisco Bangoy International Airport, 5 mi from OYO 496 D'Abirus Inn.<br>
+
+					Couples in particular like the location – they rated it 9.0 for a two-person trip.</p>
+					<br>
+							<a href="five.jpg" target="sameWindow">
+								<img class="img1" src="five.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="six"> OYO 202 Jrjf Annex</li>
+			<br>
+				<div class = "p">
+					<p>Located in Tagum, 1.9 mi from CAP Auditorium Davao, OYO 202 Jrjf Annex features rooms with air conditioning. Among the facilities of this property are a restaurant, a 24-hour front desk and room service, along with free WiFi throughout the property. Guests can enjoy city views.<br>
+
+					At the hotel rooms include a wardrobe, a flat-screen TV and a private bathroom.<br>
+
+					The nearest airport is Francisco Bangoy International Airport, 25 mi from OYO 202 Jrjf Annex.<br>
+
+					Couples in particular like the location – they rated it 8.0 for a two-person trip.</p>
+					<br>
+							<a href="six.jpg" target="sameWindow">
+								<img class="img1" src="six.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			
+			<li class="places" id="seven"> RedDoorz Plus @ Poblacion District Davao<ol>
+			<br>
+				<div class = "p">
+					<p>RedDoorz Plus @ Poblacion District Davao provides rooms with free WiFi in Davao City, in a prime location 0.8 mi from People's Park and 0.6 mi from D' Bone Collector Museum. The property is located 1.5 mi from Matina Town Square, 2.5 mi from Abreeza Mall and 2.6 mi from SM City Davao. Local points of interest like Eden Nature Park and SMX Convention Center Davao are reachable within 17 mi and 3.7 mi, respectively. <br>
+
+					SM Lanang Premier is 3.1 mi from the hotel, while Deca Wakeboard Park is 11 mi away. The nearest airport is Francisco Bangoy International Airport, 5 mi from RedDoorz Plus @ Poblacion District Davao.<br>
+
+					This is our guests' favorite part of Davao City, according to independent reviews.<br>
+
+					Couples in particular like the location – they rated it 9.3 for a two-person trip.</p>
+					<br>
+							<a href="seven.jpg" target="sameWindow">
+								<img class="img1" src="seven.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">OYO 604 Chateau Cinco Dormitel</a><br>
+					<a class="conte" href="#two">Capital O 460 World Palace Hotel</a><br>
+					<a class="conte" href="#three">RedDoorz Plus near Bangko Sentral Ng Pilipinas</a><br>
+					<a class="conte" href="#four">Dusit Thani Residence Davao</a><br>
+					<a class="conte" href="#five">OYO 496 D'Abirus Inn</a><br>
+					<a class="conte" href="#six">OYO 202 Jrjf Annex</a><br>
+					<a class="conte" href="#seven">RedDoorz Plus @ Poblacion District Davao</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+</body>
+</html>

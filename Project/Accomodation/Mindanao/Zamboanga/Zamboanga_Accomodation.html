@@ -1,0 +1,477 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Zamboanga Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background-image: linear-gradient(to right, #0d6178 3%, #c3e0e5 18%, #bfdde3 82%, #0d6178 97%);
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		background: -webkit-linear-gradient(#1A385A 40%, #466887 80%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align:center;
+		letter-spacing: 15px;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #17657a;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 8px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 350px;
+	}
+
+	div.desc {
+		padding: 15px;
+	}
+
+	.responsive {
+		padding: 0 20px;
+		float: left;
+		width: 500px;
+		margin-left: 30px;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 90%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+		margin-left: 50px;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<!--CATUNGAL, MARK ANGELO S.-->
+    <!--04.22.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1> 7  PLACES TO STAY IN ZAMBOANGA </h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Zamboanga : Accommodation</h2>
+		<br>
+			<h5>April 22, 2021</h5>
+		<br>
+			<h5><i>Mark Catungal</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>"Found in Mindanao, Zamboanga City is dubbed as the “Asia’s Latin City.” It’s quite big and packed with historical sites like the Fort Pilar and Museum, where the Spanish colonial government built the 17th-century military defense fortress. Some of its natural wonders include the Great Sta. Cruz, which is famous for its pink coralline sand. The city is known for the Zamboanga La Hermosa Festival, a colorful event where vintas, traditional Philippine boats, are taken out to sea for a competition." </p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>"Found in Mindanao, Zamboanga City is dubbed as the “Asia’s Latin City.” It’s quite big and packed with historical sites like the Fort Pilar and Museum, where the Spanish colonial government built the 17th-century military defense fortress. Some of its natural wonders include the Great Sta. Cruz, which is famous for its pink coralline sand. The city is known for the Zamboanga La Hermosa Festival, a colorful event where vintas, traditional Philippine boats, are taken out to sea for a competition." </p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  Isteraha Haven Inn</li>
+			<br>
+				<div class = "p">
+					<p>Located in Zamboanga, 1.5 mi from Fort Pilar, Isteraha Haven Inn features accommodations with a shared lounge, free private parking and a garden. Boasting family rooms, this property also provides guests with a sun terrace. The accommodations provides a 24-hour front desk, airport transfers, room service and free WiFi throughout the property. <br>
+
+					At the hotel, rooms are fitted with air conditioning and a flat-screen TV.<br>
+
+					Isteraha Haven Inn offers a continental or à la carte breakfast.<br>
+
+					The nearest airport is Zamboanga International Airport, 1.9 mi from the accommodations.</p>
+					<br>
+							<a href="one.jpg" target="sameWindow">
+								<img class="img1" src="one.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>	
+							<br>
+					<br>
+				</div>
+			
+			<li class="places" id="two"> W Hotel</li>
+			<br>
+				<div class = "p">
+					<p>Located in Zamboanga, Mindanao region, W Hotel is located 1.1 mi from Fort Pilar. Boasting a 24-hour front desk, this property also provides guests with a restaurant. The accommodations features room service, an ATM and luggage storage for guests.<br>
+
+					All rooms are fitted with air conditioning, a flat-screen TV with cable channels, a fridge, a kettle, a bidet, a hairdryer and a desk. The private bathroom is fitted with a shower and free toiletries.<br>
+
+					Guests at the hotel can enjoy a à la carte or an Asian breakfast.<br>
+
+					The nearest airport is Zamboanga International, 2.2 mi from W Hotel, and the property offers a paid airport shuttle service.<br>
+
+					Couples in particular like the location – they rated it 8.6 for a two-person trip.</p>
+					<br>
+							<a href="two.jpg" target="sameWindow">
+								<img class="img1" src="two.jpg" alt="Beach" title="Beach" style="float:left">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="three"> Marcian Business Hotel</li>
+			<br>
+				<div class = "p">
+					<p>Set in Zamboanga, Mindanao region, Marcian Business Hotel is located 0.9 mi from Fort Pilar. Among the facilities of this property are a restaurant, a 24-hour front desk and a shared lounge, along with free WiFi. The hotel has family rooms.<br>
+
+					All guest rooms in the hotel are fitted with a kettle. At Marcian Business Hotel all rooms are fitted with air conditioning and a TV.<br>
+
+					à la carte and Asian breakfast options are available every morning at the accommodations.<br>
+
+					The nearest airport is Zamboanga International, 1.2 mi from Marcian Business Hotel, and the property offers a free airport shuttle service. </p>
+					<br>
+							<a href="three.jpg" target="sameWindow">
+								<img class="img1" src="three.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="four"> Marcian Garden Hotel</li>
+			<br>
+				<div class = "p">
+					<p>Located in Zamboanga, 1.7 mi from Fort Pilar, Marcian Garden Hotel provides accommodations with a restaurant, free private parking, a bar and a garden. This 4-star hotel offers an ATM and a concierge service. The accommodations offers a 24-hour front desk, airport transfers, room service and free WiFi.<br>
+
+					A à la carte breakfast is available daily at the hotel.<br>
+
+					The nearest airport is Zamboanga International Airport, 0.6 mi from Marcian Garden Hotel.</p>
+					<br>
+							<a href="four.jpg" target="sameWindow">
+								<img class="img1" src="four.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			<li class="places" id="five"> L' Meridian Suite <li>
+			<br>
+				<div class = "p">
+					<p>Located in Zamboanga, 2.2 mi from Fort Pilar, L' Meridian Suite features accommodations with a restaurant and free private parking. The accommodations offers a 24-hour front desk, room service and luggage storage for guests.<br>
+
+					The units in the hotel are fitted with a flat-screen TV with satellite channels. All rooms at L' Meridian Suite have air conditioning and a desk.<br>
+
+					Guests at the accommodations can enjoy a continental or a à la carte breakfast.<br>
+
+					The nearest airport is Zamboanga International Airport, 0.6 mi from L' Meridian Suite.</p>
+					<br>
+							<a href="five.jpg" target="sameWindow">
+								<img class="img1" src="five.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			<li class="places" id="six"> Cityinn Hotel</li>
+			<br>
+				<div class = "p">
+					<p>Whether you're a tourist or traveling on business, Cityinn Hotel is a great choice for accommodation when visiting Zamboanga City. The excitement of the city center is only 1.9 km away. With its convenient location, the hotel offers easy access to the city's must-see destinations. <br>
+
+					Cityinn Hotel offers impeccable service and all the essential amenities to invigorate travelers. The hotel provides free Wi-Fi in all rooms, 24-hour front desk, luggage storage, Wi-Fi in public areas, car park to ensure our guests the greatest comfort.<br>
+
+					All guest accommodations feature thoughtful amenities to ensure an unparalleled sense of comfort. Besides, the hotel's host of recreational offerings ensures you have plenty to do during your stay. When you are looking for comfortable and convenient accommodations in Zamboanga City, make Cityinn Hotel your home away from home.</p>
+					<br>
+							<a href="six.jpg" target="sameWindow">
+								<img class="img1" src="six.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+			
+			<li class="places" id="seven"> RIDO Apartment & Residence (Kwarto Adorada)<ol>
+			<br>
+				<div class = "p">
+					<p>Located just 3.7 mi from Fort Pilar, RIDO Apartment & Residence (Kwarto Adorada) provides accommodations in Zamboanga with access to a garden, barbecue facilities, as well as dry cleaning services. This apartment features free private parking and a shared kitchen.<br>
+
+					This apartment has 2 bedrooms, a kitchen, a flat-screen TV, a seating area and 1 bathroom with a shower.<br>
+
+					The apartment offers a sun terrace. A car rental service is available at Rido apt and Residence.<br>
+
+					The nearest airport is Zamboanga International Airport, 2.5 mi from the accommodations.</p>
+					<br>
+							<a href="seven.jpg" target="sameWindow">
+								<img class="img1" src="seven.jpg" alt="Beach" title="Beach" style="float:right">
+							</a>
+					<br>
+				</div>
+				
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Isteraha Haven Inn</a><br>
+					<a class="conte" href="#two">W Hotel</a><br>
+					<a class="conte" href="#three">Marcian Business Hotel </a><br>
+					<a class="conte" href="#four">Marcian Garden Hotel</a><br>
+					<a class="conte" href="#five">L' Meridian Suite</a><br>
+					<a class="conte" href="#six">Cityinn Hotel</a><br>
+					<a class="conte" href="#seven">RIDO Apartment & Residence (Kwarto Adorada)</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+</body>
+</html>

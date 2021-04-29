@@ -1,0 +1,677 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Bohol Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+	
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #3b668f;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 4px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 200px;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	.responsive {
+		padding: 0 10px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 50%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	}
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:left;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<!--BELECINA, RHENIEL JACOB M.-->
+    <!--03.25.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>10 THINGS TO DO WHEN IN BOHOL</h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Bohol Travel Tips</h2>
+		<br>
+			<h5>March 25, 2021</h5>
+		<br>
+			<h5><i>by Jacob Belecina</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>You go to Manilla for city life; Boracay for beach life; and Bohol…that’s for jungle life. Expect a vacation filled with picturesque jungle adventures that will get your heart pounding and endorphins flowing</p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="3rdpic.jpg">
+		  <img src="3rdpic.jpg" alt="Northern Lights" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="4thpic.jpg">
+		  <img src="4thpic.jpg" alt="Mountains" width="600" height="400">
+		</a>
+		
+	  </div>
+	</div>
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>As the 10th largest island in the Philippines, you can imagine that there is a lot of ground to cover! In the center of the island, you’ll find the epicenter of nature fun with ziplining, waterfall climbing, cave exploring, and river cruising. South of the island you’ll get your fix of white sand beaches and cocktails with tiki straws. Also in the South, you’ll find the capitol city, Tagbilaran, which is filled with shopping malls, restaurants, bars, and guesthouses. You can also venture up north to mingle with locals who aren’t used to seeing tourists in their parts.</p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one">  Visit the Chocolate Hills</li>
+			<br>
+				<div class = "p">
+					<p>The Chocolate Hills are by far the most popular tourist attraction on Bohol Island and once you see it, it’s easy to understand why. Here lay hundreds of symmetrical green mountainous hills as far as the eye can see.</p>
+					<br>
+					<p>During the dry season, these hills take on a milk-chocolate color- hence “Chocolate Hills”. During the rainy season, they are lush and green.</p>
+					<br>
+					<p>Hire a motorbike taxi to take you and enjoy the winding roads with natural and cultural sights along the way.</p>
+							<a href="one.jpg" target="sameWindow">
+								<img class="img1" src="one.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			<li class="places" id="two"> Bohol Habitat Conservation Conservatory</li>
+			<br>
+				<div class = "p">
+					<p>Butterflies, spiders, centipedes, caterpillars, birds, and flowers- come witness a dense collection of natural beauty at the Bohol Habitat Conservation Conservatory.</p>
+					<br>
+					<p>Walk with a guide who will point out fauna indigenous to the island, persuade you to let bugs crawl on your arm, and take a few funny photos while you’re at it. Afterwards, stop by the restaurant and ice cream shop near the entrance to try some all-natural ice cream!</p>
+					<br>
+					<p>As the tour doesn’t take much time- maybe 30 minutes- it’s a great idea to make this one of many stops that you do in the area.</p>
+							<a href="two.jpg" target="sameWindow">
+								<img class="img1" src="two.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>
+			<li class="places" id="three"> Bamboo Hanging Bridge</li>
+			<br>
+				<div class = "p">
+					<p>Visit the Bamboo Hanging Bridge where you’ll walk across a bamboo-weaved bridge over the slow flowing river. Each step on the bridge gives you a little tingle up your back as it feels quite delicate- but not to worry as the bridge is suspended with sturdy cables that won’t let you fall!</p>
+					<br>
+					<p>Once you cross the bridge, there are little souvenir shops to purchase magnets, bags, shirts, and more.</p>
+					<br>
+							<a href="three.jpg" target="sameWindow">
+								<img class="img1" src="three.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			<li class="places" id="four"> River Paddle Boarding</li>
+			<br>
+				<div class = "p">
+					<p>Journey down to the southwest corner of Bohol where you can embark on a day of paddle boarding.  You’ll navigate through winding jungle passageways and around small waterfalls that offer a taste of nature in its purest form.</p>
+					<br>
+					<p>When you book a tour with SUP Tours Philippines or Loboc River Watersports, they’ll provide you with the paddle board, paddles, life jackets and a traditional Filipino lunch that is to die for.</p>
+							<a href="four.jpg" target="sameWindow">
+								<img class="img1" src="four.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			<li class="places" id="five"> Tarsier Conservatory</li>
+			<br>
+				<div class = "p">
+					<p>Tarsiers- locally known as ‘mamag’- are an endangered species and would be close to extinction if it weren’t for the efforts of the Tarsier Conservatory in Bohol. Tarsiers are considered a “dependent” species meaning that they cannot thrive in the wild on their own. Every visit to the Tarsier Conservatory helps fund efforts and habitat to keep these cute little creatures alive.</p>
+					<br>
+					<p>When you visit the conservatory, you’ll see several of these little frog-fingers primates hanging out in the trees, sleeping under leaves and staring at you with their great big eyes. The tour only lasts 20 minutes because they don’t want to stress these Tarsiers out, but it’s totally worth it.</p>
+					<br>
+							<a href="five.jpg" target="sameWindow">
+								<img class="img1" src="five.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			<li class="places" id="six"> Take an unofficial cruise down Loboc River</li>
+			<br>
+				<div class = "p">
+					<p>On the way to the Chocolate Hills, you’ll drive along side a small river surrounded by pure jungle. Locals have built fishing huts and small vendor stations selling snacks. Some of these locals own small wooden boats and are happy to take you for a ride. You can ask your driver to help you arrange a deal.</p>
+					<br>
+					<p>Once on the small local boat, the cruise down the river is absolutely breathtaking with tall palm trees and undisturbed jungle. It feels like a scene out of the book, “Where the Wild Things Are”.</p>
+					<br>
+					<p>At the end of the river is a fresh-water waterfall. Hop in with your clothes if you’d like. You can splash around in the shallows or duck under the waterfall for a nice back massage.</p>
+							<a href="six.jpg" target="sameWindow">
+								<img class="img1" src="six.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+				<li class="places" id="seven"> Official Loboc River Cruise</li>
+			<br>
+				<div class = "p">
+					<p>If you’d like to float down the Loboc River in comfort, than join the organized cruise selling tickets at the shore. The boat resembles a large floating house with a thatched roof and large dining room.</p>
+					<br>
+					<p>You’ll cruise down the river looking at the sights while enjoying a buffet style lunch. There is a live band that plays a collection of songs from around the world to appeal to the assembly of international guests on board.</p>
+					<br>
+					<p>Towards the end of the trip, your boat will stop by a platform full of Filipina women and children dressed in traditional clothing, singing and dancing for you. You may join in on the festivities and of course, a donation is welcome.</p>
+					<br>
+							<a href="seven.jpg" target="sameWindow">
+								<img class="img1" src="seven.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+				<li class="places" id="eight"> Mahogany Forest</li>
+			<br>
+				<div class = "p">
+					<p>Rent a motorbike to experience the beauty that is the Mahogany Forest. The roads wind and bend making for a seriously fun ride. The roads are nicely paved and the traffic isn’t too heavy so even new riders can handle the journey.</p>
+					<br>
+					<p>Park your bike on the side of the road and meander up the hill to get a closer look at the massive roots that tangle together in the soil. With the sun peering through the trees and the fresh air surrounding you- you’ll get a feeling of what Bohol is all about.</p>
+					<br>
+							<a href="eight.jpg" target="sameWindow">
+								<img class="img1" src="eight.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+				<li class="places" id="nine"> Cathedral of San Jose</li>
+			<br>
+				<div class = "p">
+					<p>You’ll quickly notice and discover that religion is deeply rooted in the culture of Filipino people. The Cathedral of San Jose is one of the largest in Bohol’s big city and is the most frequented by locals throughout the week and on Sunday for mass. No matter your religion, it’s interesting to visit the Cathedral of San Jose and witness how locals worship. You might even stumble upon a wedding or a baptism.</p>
+					<br>
+					<p>Like many historic structures in the city, this cathedral still has walls made of coral stone. While there have been some renovations, including new paint on the walls and a makeover of the paintings on the cathedral’s dome ceiling, the church’s original integrity has been impressively kept in tact for centuries.</p>
+					<br>
+							<a href="nine.jpg" target="sameWindow">
+								<img class="img1" src="nine.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>
+				<li class="places" id="ten"> Baclayon Churche</li>
+			<br>
+				<div class = "p">
+					<p>Baclayon Church, also known as “The Immaculate Conception of the Virgin Mary Parish Church”, is the oldest Christian settlement in Bohol. Founded in 1596 and still standing, this Roman Catholic Church has been officially declared a ‘National Cultural Treasure’ that attracts thousands of tourists year round.</p>
+					<br>
+					<p>The church is a mysterious-looking building made from grey coral stone that has been weathered over the centuries. There are archways starting to crumble and pillars that have been eroded by the wind and typhoons as it sits next to the seaside. The 7.2 magnitude earthquake on Bohol in 2013 did some damage to the church but luckily left the museum unharmed. All in all, it makes for an interesting visit.</p>
+					<br>
+							<a href="ten.jpg" target="sameWindow">
+								<img class="img1" src="ten.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>
+				
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Visit the Chocolate Hills</a><br>
+					<a class="conte" href="#two">Bohol Habitat Conservation Conservatory</a><br>
+					<a class="conte" href="#three">Bamboo Hanging Bridge</a><br>
+					<a class="conte" href="#four">River Paddle Boarding</a><br>
+					<a class="conte" href="#five">Tarsier Conservatory</a><br>
+					<a class="conte" href="#six">Take an unofficial cruise down Loboc River</a><br>
+					<a class="conte" href="#seven">Official Loboc River Cruise</a><br>
+					<a class="conte" href="#eight">Mahogany Forest</a><br>
+					<a class="conte" href="#nine">Cathedral of San Jose</a><br>
+					<a class="conte" href="#ten">Baclayon Church</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+	</div>
+			<div class = "guide">
+		<br>
+				<h1 class = "title">Read more of our Bohol Guide</h1>
+					<div class = "margin">
+						<div class="row">
+			
+							<div class="column">
+								<div class="last">
+										<a href="Album/album1.1.jpg" target="_blank">
+											<img src="Palawan1.jpg"></a>
+												<div class="overlay">
+														<div class="text">BOHOL ITINERARY: <br>ULTIMATE TRAVEL GUIDE</div>
+												</div>
+								</div>
+														<h3>BOHOL ITINERARY: ULTIMATE TRAVEL GUIDE</h3>
+							</div>
+						
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">BOHOL FOODS</div>
+											</div>
+								</div>
+												<h3>BOHOL FOODS</h3>
+							</div>
+			
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">BOHOL</div>
+											</div>
+								</div>
+											<h3>BOHOL</h3>
+							</div>
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">8 Things To Do in Palawan</div>
+											</div>
+								</div>
+												<h3>8 Things To Do in Palawan</h3>
+							</div>
+						</div>
+					</div>
+</div>
+</body>
+</html>

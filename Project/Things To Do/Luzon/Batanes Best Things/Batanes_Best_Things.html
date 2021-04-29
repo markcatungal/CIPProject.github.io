@@ -1,0 +1,627 @@
+<!DOCTYPE HTML>
+<html  lang="en">
+<head>
+	<meta charset="utf-8" >
+	<link href='https://fonts.googleapis.com/css?family=Cutive Mono' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@700&family=Merriweather+Sans&family=Playfair+Display:wght@800&family=Poppins&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Playfair Display SC' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@900&family=Source+Code+Pro:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+	<title>Batanes Travel Tips</title>
+    <style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	
+	body{
+		padding: 10px;
+		background: white;
+	}
+	.topnav {
+	  overflow: hidden;
+	  background-color: #155265;
+	  height: 70px;
+	  
+	}
+	
+	.topnav a {
+
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 22px 17px;
+	  text-decoration: none;
+	  float:right;
+	  font-size: 22px;
+	}
+
+
+	.topnav a:hover {
+	  background-color: #4ac2dd;
+	  color: black;
+	}
+
+
+	.topnav a.active {
+	  background-color: #155265;
+	  color: #f2f2f2;
+	  float: left;
+	  text-decoration:none;
+	}	
+
+	.container {
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+
+	.container img {
+		width: 75%;
+		vertical-align: middle;
+		height: 750px;
+	}
+
+	.container .content {
+		background: rgb(0, 0, 0); 
+		background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+		color: #f1f1f1;
+		width: 97.4%;
+		padding: 20px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-transform: uppercase;
+		text-align: center;
+	}
+	
+	.title{
+		background: #C3E0E5;
+		border: 8px solid #2691a5;
+	}
+	
+	
+	/* Left column */
+	.leftcolumn {   
+		float: left;
+		width: 75%;
+		background: #C3E0E5;
+	}
+	
+	/* Right column */
+	.rightcolumn {
+		float: left;
+		width: 25%;
+		padding-left: 20px;
+		
+	}
+	
+	/* Add a card effect for articles */
+	.card {
+		background: #C3E0E5;
+		padding: 20px;
+	}
+	
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	
+	h1{
+		text-align: center; 
+		font-size: 50px;
+		letter-spacing: 10px;
+		font-family: 'Yeseva One', cursive;
+		color: white;
+		text-transform: uppercase;
+	}
+	
+	h2{
+		font-family: 'Libre Baskerville', serif;
+		font-weight:100px;
+		text-align:center;
+		letter-spacing: 15px;
+		color:#1A385A;
+		font-size:50px;
+		text-transform: uppercase;
+	}
+	
+	h3{
+		font-weight:100px;
+		text-align:left;
+		color:#E46F44;
+		font-size:40px;
+	}
+	
+	h5{
+		font-weight:100px;
+		text-align:center;
+		margin-left: 50px;
+		color: #3b668f;
+		font-size:20px;
+	}
+	
+	.p{
+		font-family: 'Poppins', sans-serif;
+		color:#264473;
+		text-align: justify;
+		font-size: 23px;
+		text-indent: 70px;
+		line-height: 40px;
+		word-spacing: 8px;
+		margin: 30px;
+	}
+	
+	.p .img1{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 80%;
+		border: 4px;
+		border-style: double dashed inset;
+		border-color: #b0643a;
+		
+	}
+	
+	div.gallery {
+		border: 6px solid #6F8B9F;
+	}
+
+	div.gallery:hover {
+		opacity: 1;
+		border: 4px;
+		border-style: double dashed inset;
+		border-left-color:#1e656d;
+		border-top-color: #517f83;
+		border-right-color: #1e656d;
+		border-bottom-color: #517f83;
+	}
+
+	div.gallery img {
+		width: 100%;
+		height: 200px;
+	}
+
+	div.desc {
+		padding: 15px;
+		text-align: center;
+	}
+
+	.responsive {
+		padding: 0 10px;
+		float: left;
+		width: 24.99999%;
+	}
+
+	@media only screen and (max-width: 700px) {
+		.responsive {
+			width: 50%;
+			margin: 6px 0;
+	  }
+	}
+
+	@media only screen and (max-width: 500px) {
+		.responsive {
+			width: 100%;
+	  }
+	}
+
+	.clearfix:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+	
+	.listplaces {
+	  list-style: none;
+	  counter-reset: my-awesome-counter;
+	  padding: 20px;
+	  margin-left: 80px;
+	}
+	.places {
+	  counter-increment: my-awesome-counter;
+	  margin: 0.25rem;
+	  font-size: 50px;
+	  color: #1B4A62;
+	}
+	.places::before {
+	  content: counter(my-awesome-counter);
+	  background: #1B4A62;
+	  width: 10rem;
+	  height: 10rem;
+	  border-radius: 50%;
+	  display: inline-block;
+	  line-height: 10rem;
+	  color: white;
+	  text-align: center;
+	  margin-right: 0.5rem;
+	}
+	
+	.link{
+	 position: relative;
+	 font-size: 24px;
+	}
+	.conte {
+		display: inline-block;
+		position: relative;
+		text-decoration: none;
+		padding: 10px 0;
+		color: #1A385A;
+	}
+
+	.link {
+		 position: relative;
+		 display: block;
+		 padding: 20px 0;
+	}
+
+	.conte:after {
+		 content: '';
+		 position: absolute;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 width: 100%;
+		 height: 3px;
+		 transform: scaleX(0);
+		 background-color: #d18e11;
+		 transition: transform 0.3s;
+	}
+	.conte:hover:after {
+		 transform: scaleX(1);
+	}
+	.box{
+		border: 7px inset #2691a5;
+		border-radius: 50px;
+		margin-left:110px;
+		margin-right: 110px;
+		padding: 20px;
+	}
+	.margin{
+		margin-left:200px;
+	}
+	.column img{
+		display: block;
+		width:250px;
+		height:200px;
+	}
+	.title{
+		text-align: center;
+		color:#1A385A;
+	}
+	.column h3{
+		color: darkblue;
+		text-align:center;
+		font-size:20px;
+	}
+	.column p{
+		text-align:center;
+	}
+	.column {
+		float: left;
+		width: 18%;
+		margin: 20px;
+	}
+
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+		margin: auto;
+	}
+	.guide{
+		width: 100%;
+		float:left;
+	}
+	
+	/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+	@media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn, .guide {   
+		width: 100%;
+		padding: 0;
+		}
+	}
+	
+	.last {
+		position: relative;
+		width: 50%;
+	}
+	
+	.overlay {
+		  position: absolute;
+		  bottom: 100%;
+		  left: 0;
+		  right: 0;
+		  background-color: black;
+		  background: rgba(0, 0, 0, 0.2);
+		  overflow: hidden;
+		  width: 250px;
+		  height: 0;
+		  transition: .5s ease;
+	}
+
+	.last:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+	
+	</style>
+</head>
+<body>
+	<div class="topnav">
+		<a href="#Home" class="active" style="letter-spacing: 20px;"><b>LAKWATSEROS</b></a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">About Us</a>
+		<a href="JIMENEZ_Places_ITAD.html#Travel">Accomodation</a>
+		<a href="JIMENEZ_PhotoGallery_ITAD.html#Resume">Foods</a>
+		<a href="JIMENEZ_Resume_ITAD.html#Resume">Things To Do</a>
+		<a href="JIMENEZ_Film_ITAD.html#Film">Travel Tips</a>
+		<a href="JIMENEZ_MyBeat_ITAD.html#Music">Destination</a>
+		<a href="JIMENEZ_Bio_ITAD.html#">Home</a>
+	</div>
+	<br>
+	<!--CALASAN, RAIDEN-->
+    <!--03.30.2021-->
+	
+	<div class="container">
+	
+			<img src="cover.jpg" alt="Aerial Shot" style="width:100%; height:650px;">
+		
+		<div class="content">
+    
+			<h1>6 THINGS TO DO WHEN IN Batanes</h1>
+    
+		</div>
+	</div>
+	<br>
+	<div class="title">
+		<br>
+		<br>
+			<h2> Batanes Travel Tips</h2>
+		<br>
+			<h5>March 30, 2021</h5>
+		<br>
+			<h5><i>by Raiden Calasan</i></h5>
+		<br>
+	</div>	
+	<br>
+	<div class="leftcolumn">
+		<div class = "p">
+			<p>Batanes in the Philippines has a little bit of everything for different types of travelers: the mountains, the sea, the rolling hills, and the food. But above all, Batanes offers a unique type of refuge — peace and quiet, and the taste of a back-to-basics lifestyle.</p>
+		</div>
+	<br>
+	<hr>
+	<br>
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="1stpic.jpg">
+		  <img src="1stpic.jpg" alt="Cinque Terre" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="2ndpic.jpg">
+		  <img src="2ndpic.jpg" alt="Forest" width="600" height="500">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="3rdpic.jpg">
+		  <img src="3rdpic.jpg" alt="Northern Lights" width="600" height="400">
+		</a>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+		<a target="_blank" href="4thpic.jpg">
+		  <img src="4thpic.jpg" alt="Mountains" width="600" height="400">
+		</a>
+		
+	  </div>
+	</div>
+	<div class="clearfix"></div>
+	<br>
+	<hr>
+	<br>
+		<div class = "p">
+			<p>Batanes, called the Home of the Winds, is considered the smallest province in the Philippines with only 230 kilometers of total land area. Part of Batanes’ charm comes from its somewhat seclusion from its busier and more crowded neighboring provinces.</p>
+		</div>
+		
+		<div style="font-family: 'Cutive Mono'; font-size: 30px; color:white; border-left: 8px solid #84aed9; text-align:center;  padding:20px; 
+		background-color: #1A385A; margin-left:80px; margin-right:80px;">		      			
+				<b><q><i>Traveling – it leaves you speechless,<br>
+							then turns you into a storyteller</i></q></b>
+		<br>
+	</div>
+	<div>
+	<br>
+	<hr>
+	<br>
+		<ol class="listplaces">
+			<li class="places" id="one"> Tour around with bike</li>
+			<br>
+				<div class = "p">
+					<p>The ride might be wild and crazy but most of the time, it won’t be. The boat used is a faluwa, a traditional boat without any outriggers that is made for strong waves.
+                       Boatmen steer the boat with their feet while keeping an eye on the waves from above the deck. The boat can also carry cargo like mountain bikes and motorcycles for a cargo fee.</p>
+					<br>
+							<a href="bike.jpg" target="sameWindow">
+								<img class="img1" src="bike.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				
+			<li class="places" id="two">  Trek Naidi and Vayang rolling hills</li>
+			<br>
+				<div class = "p">
+					<p>You can’t help but sing that The hills are alive with the sound of music! Batanes landscapes are teeming with hills and mountains. Explore, laze around, and get lost in so much feels with the picturesque view everywhere.</p>
+					<br>
+							<a href="hills.jpg" target="sameWindow">
+								<img class="img1" src="hills.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				
+			<li class="places" id="three">  Hike Mt. Iraya</li>
+			<br>
+				<div class = "p">
+					<p>Mt. Iraya is a major landmark in Batanes measuring 1,009 meters above sea level. It catches every eye upon landing Basco airport in Batan Island. The mountain isn’t that difficult to climb but rather it’s an enduring crawl through dense forests with crisp air.
+                       Roaming cows, hundred-year old trees, and the natural spring that many locals use for drinking water await you on your way up.</p>
+					<br>
+							<a href="hike.jpg" target="sameWindow">
+								<img class="img1" src="hike.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				
+			<li class="places" id="four"> Boat ride to Sabtang or Itbayat Island</li>
+			<br>
+				<div class = "p">
+					<p>The ride might be wild and crazy but most of the time, it won’t be. The boat used is a faluwa, a traditional boat without any outriggers that is made for strong waves.
+                       Boatmen steer the boat with their feet while keeping an eye on the waves from above the deck. The boat can also carry cargo like mountain bikes and motorcycles for a cargo fee.</p>
+					<br>
+							<a href="boat.jpg" target="sameWindow">
+								<img class="img1" src="boat.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				
+			<li class="places" id="five"> Relish on local delicacies<li>
+			<br>
+				<div class = "p">
+					<p>Across Basco Airport is the Pension Ivatan Restaurant, one of the most well-known restaurants in Batanes that offers delectable and mouth-watering Ivatan cuisines and other Filipino favorites. One of their must-try dishes is their best-seller, the Ivatan Platter.
+                       There are other food joints to try Dibang (Flying Fish).</p>
+					<br>
+							<a href="relish.jpg" target="sameWindow">
+								<img class="img1" src="relish.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			
+				
+			<li class="places" id="six"> Visit Nakabuang Beach and Arch<ol>
+			<br>
+				<div class = "p">
+					<p>Also known as White Beach, this popular beach destination in Sabtang Island is great for those looking for a place to swim. There is also a famous rock arch on the beach where you can pass through and take pictures with.</p>
+					<br>
+							<a href="beach.jpg" target="sameWindow">
+								<img class="img1" src="beach.jpg" alt="Beach" title="Beach">
+							</a>
+					<br>
+				</div>	
+			
+			</ol></li>
+		</ol>
+	</div>
+	<br>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="card">
+			<h3>Table of Contents</h3>
+			  <br>
+				<div class="link">
+					<a class="conte" href="#one">Tour around with bike</a><br>
+					<a class="conte" href="#two">Trek Naidi and Vayang rolling hills</a><br>
+					<a class="conte" href="#three">Hike Mt. Iraya</a><br>
+					<a class="conte" href="#four">Boat ride to Sabtang or Itbayat Island</a><br>
+					<a class="conte" href="#five">Relish on local delicacies</a><br>
+					<a class="conte" href="#six">Visit Nakabuang Beach and Arch</a><br>
+				</div>
+		</div>
+			<br>
+		<div class="card">
+			<h3>Popular Post</h3>
+			  <br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div><br>
+			  <div class="fakeimg">Image</div>
+		</div>
+		</div>
+	
+			<div class = "guide">
+		<br>
+				<h1 class = "title">Read more of our Batanes Guide</h1>
+					<div class = "margin">
+						<div class="row">
+			
+							<div class="column">
+								<div class="last">
+										<a href="Album/album1.1.jpg" target="_blank">
+											<img src="Palawan1.jpg"></a>
+												<div class="overlay">
+														<div class="text">BATANES ITINERARY: <br>ULTIMATE TRAVEL GUIDE</div>
+												</div>
+								</div>
+														<h3>BATANES ITINERARY: ULTIMATE TRAVEL GUIDE</h3>
+							</div>
+						
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">BATANES FOODS</div>
+											</div>
+								</div>
+												<h3>BATANES FOODS</h3>
+							</div>
+			
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">BATANES</div>
+											</div>
+								</div>
+											<h3>BATANES</h3>
+							</div>
+		  
+							<div class="column">
+								<div class="last">
+									<a href="Album/album1.1.jpg" target="_blank">
+										<img src="Palawan1.jpg"></a>
+											<div class="overlay">
+												<div class="text">BATANES</div>
+											</div>
+								</div>
+												<h3>BATANES</h3>
+							</div>
+						</div>
+					</div>
+					
+</div>
+</body>
+</html>
